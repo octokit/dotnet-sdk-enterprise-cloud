@@ -1,0 +1,13 @@
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/bin/Debug/net8.0/GitHub.Octokit.GHEC.SDK.deps.json
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/bin/Debug/net8.0/GitHub.Octokit.GHEC.SDK.dll
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/bin/Debug/net8.0/GitHub.Octokit.GHEC.SDK.pdb
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.csproj.AssemblyReference.cache
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.AssemblyInfoInputs.cache
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.AssemblyInfo.cs
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.csproj.CoreCompileInputs.cache
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.sourcelink.json
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.dll
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/refint/GitHub.Octokit.GHEC.SDK.dll
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/GitHub.Octokit.GHEC.SDK.pdb
+/home/runner/work/source-generator/source-generator/stage/dotnet/dotnet-sdk-enterprise-cloud/src/obj/Debug/net8.0/ref/GitHub.Octokit.GHEC.SDK.dll
