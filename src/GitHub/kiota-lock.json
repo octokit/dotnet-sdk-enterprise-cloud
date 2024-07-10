@@ -1,0 +1,32 @@
+{
+  "descriptionHash": "3207A1EF4EB3F1DD995986A1E442051CE8E1D6E5D4B1669A462D4A71B82DF4EC6ADE644A2C9DE0F91A05F20A870800D471C40564691AE2C7AFAE7FFEEB00A9FE",
+  "descriptionLocation": "../../../../../schemas/ghec.json",
+  "lockFileVersion": "1.0.0",
+  "kiotaVersion": "1.14.0",
+  "clientClassName": "GitHubClient",
+  "clientNamespaceName": "GitHub",
+  "language": "CSharp",
+  "usesBackingStore": false,
+  "excludeBackwardCompatible": true,
+  "includeAdditionalData": true,
+  "serializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Form.FormSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Multipart.MultipartSerializationWriterFactory"
+  ],
+  "deserializers": [
+    "Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Text.TextParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Form.FormParseNodeFactory"
+  ],
+  "structuredMimeTypes": [
+    "application/json",
+    "text/plain;q=0.9",
+    "application/x-www-form-urlencoded;q=0.2",
+    "multipart/form-data;q=0.1"
+  ],
+  "includePatterns": [],
+  "excludePatterns": [],
+  "disabledValidationRules": []
+}
