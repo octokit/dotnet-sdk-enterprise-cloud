@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright (c) GitHub 2023-2024")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("GitHub .NET SDK Unit tests")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e403a82f885b3c399e1e7bba54396ed3765ffaa8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c3f2ce971ed21873625b27f35c92460150a737d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
