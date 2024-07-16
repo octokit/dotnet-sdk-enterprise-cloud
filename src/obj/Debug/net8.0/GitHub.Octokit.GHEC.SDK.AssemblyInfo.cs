@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("\n    This is an auto-generated SDK for GitHub\'s REST API for the GitHub Enterpris" +
     "e Cloud product, built on Kiota.\n    ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1-alpha+2236bb22ced3dadcdb8dc72e2b7fa19289b55c50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1-alpha+8070d3565170ac510b9ee2200307d39c3b8c46fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("GitHub.Octokit.GHEC.SDK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GitHub.Octokit.GHEC.SDK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.1.0")]
