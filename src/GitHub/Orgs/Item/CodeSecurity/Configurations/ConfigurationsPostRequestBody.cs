@@ -27,6 +27,8 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations {
 #else
         public string Description { get; set; }
 #endif
+        /// <summary>The status of enforcement</summary>
+        public ConfigurationsPostRequestBody_enforcement? Enforcement { get; set; }
         /// <summary>The name of the code security configuration. Must be unique within the organization.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -41,6 +43,8 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations {
         public ConfigurationsPostRequestBody_secret_scanning? SecretScanning { get; set; }
         /// <summary>The enablement status of secret scanning push protection</summary>
         public ConfigurationsPostRequestBody_secret_scanning_push_protection? SecretScanningPushProtection { get; set; }
+        /// <summary>The enablement status of secret scanning validity checks</summary>
+        public ConfigurationsPostRequestBody_secret_scanning_validity_checks? SecretScanningValidityChecks { get; set; }
         /// <summary>
         /// Instantiates a new <see cref="ConfigurationsPostRequestBody"/> and sets the default values.
         /// </summary>
@@ -51,9 +55,11 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations {
             DependabotAlerts = ConfigurationsPostRequestBody_dependabot_alerts.Disabled;
             DependabotSecurityUpdates = ConfigurationsPostRequestBody_dependabot_security_updates.Disabled;
             DependencyGraph = ConfigurationsPostRequestBody_dependency_graph.Enabled;
+            Enforcement = ConfigurationsPostRequestBody_enforcement.Enforced;
             PrivateVulnerabilityReporting = ConfigurationsPostRequestBody_private_vulnerability_reporting.Disabled;
             SecretScanning = ConfigurationsPostRequestBody_secret_scanning.Disabled;
             SecretScanningPushProtection = ConfigurationsPostRequestBody_secret_scanning_push_protection.Disabled;
+            SecretScanningValidityChecks = ConfigurationsPostRequestBody_secret_scanning_validity_checks.Disabled;
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
@@ -79,10 +85,12 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations {
                 {"dependabot_security_updates", n => { DependabotSecurityUpdates = n.GetEnumValue<ConfigurationsPostRequestBody_dependabot_security_updates>(); } },
                 {"dependency_graph", n => { DependencyGraph = n.GetEnumValue<ConfigurationsPostRequestBody_dependency_graph>(); } },
                 {"description", n => { Description = n.GetStringValue(); } },
+                {"enforcement", n => { Enforcement = n.GetEnumValue<ConfigurationsPostRequestBody_enforcement>(); } },
                 {"name", n => { Name = n.GetStringValue(); } },
                 {"private_vulnerability_reporting", n => { PrivateVulnerabilityReporting = n.GetEnumValue<ConfigurationsPostRequestBody_private_vulnerability_reporting>(); } },
                 {"secret_scanning", n => { SecretScanning = n.GetEnumValue<ConfigurationsPostRequestBody_secret_scanning>(); } },
                 {"secret_scanning_push_protection", n => { SecretScanningPushProtection = n.GetEnumValue<ConfigurationsPostRequestBody_secret_scanning_push_protection>(); } },
+                {"secret_scanning_validity_checks", n => { SecretScanningValidityChecks = n.GetEnumValue<ConfigurationsPostRequestBody_secret_scanning_validity_checks>(); } },
             };
         }
         /// <summary>
@@ -98,10 +106,12 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations {
             writer.WriteEnumValue<ConfigurationsPostRequestBody_dependabot_security_updates>("dependabot_security_updates", DependabotSecurityUpdates);
             writer.WriteEnumValue<ConfigurationsPostRequestBody_dependency_graph>("dependency_graph", DependencyGraph);
             writer.WriteStringValue("description", Description);
+            writer.WriteEnumValue<ConfigurationsPostRequestBody_enforcement>("enforcement", Enforcement);
             writer.WriteStringValue("name", Name);
             writer.WriteEnumValue<ConfigurationsPostRequestBody_private_vulnerability_reporting>("private_vulnerability_reporting", PrivateVulnerabilityReporting);
             writer.WriteEnumValue<ConfigurationsPostRequestBody_secret_scanning>("secret_scanning", SecretScanning);
             writer.WriteEnumValue<ConfigurationsPostRequestBody_secret_scanning_push_protection>("secret_scanning_push_protection", SecretScanningPushProtection);
+            writer.WriteEnumValue<ConfigurationsPostRequestBody_secret_scanning_validity_checks>("secret_scanning_validity_checks", SecretScanningValidityChecks);
         }
     }
 }
