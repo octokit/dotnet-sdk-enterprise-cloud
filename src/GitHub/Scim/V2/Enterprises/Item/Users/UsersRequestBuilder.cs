@@ -44,7 +44,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users {
         {
         }
         /// <summary>
-        /// **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#list-scim-provisioned-identities-for-an-enterprise" />
         /// </summary>
         /// <returns>A <see cref="ScimEnterpriseUserList"/></returns>
@@ -72,7 +72,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users {
             return await RequestAdapter.SendAsync<ScimEnterpriseUserList>(requestInfo, ScimEnterpriseUserList.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#provision-a-scim-enterprise-user" />
         /// </summary>
         /// <returns>A <see cref="ScimEnterpriseUserResponse"/></returns>
@@ -102,7 +102,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users {
             return await RequestAdapter.SendAsync<ScimEnterpriseUserResponse>(requestInfo, ScimEnterpriseUserResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -121,7 +121,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users {
             return requestInfo;
         }
         /// <summary>
-        /// **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Creates an external identity for a new SCIM enterprise user.SCIM is responsible for user provisioning, not authentication. The actual user authentication is handled by SAML. However, with SCIM enabled, users must first be provisioned via SCIM before they can sign in through SAML.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -152,7 +152,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users {
             return new UsersRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// **Note:** SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM enterprise members.When you remove a user with a SCIM-provisioned external identity from an enterprise using a `patch` with `active` flag to `false`, the user&apos;s metadata remains intact. This means they can potentially re-join the enterprise later. Although, while suspended, the user can&apos;t sign in. If you want to ensure the user can&apos;t re-join in the future, use the delete request. Only users who weren&apos;t permanently deleted will appear in the result list.
         /// </summary>
         public class UsersRequestBuilderGetQueryParameters 
         {
