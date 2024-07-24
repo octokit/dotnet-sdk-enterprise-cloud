@@ -44,7 +44,7 @@ namespace GitHub.Organizations {
         {
         }
         /// <summary>
-        /// Lists all organizations, in the order that they were created.**Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
+        /// Lists all organizations, in the order that they were created.&gt; [!NOTE]&gt; Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/orgs#list-organizations" />
         /// </summary>
         /// <returns>A List&lt;OrganizationSimple&gt;</returns>
@@ -64,7 +64,7 @@ namespace GitHub.Organizations {
             return collectionResult?.ToList();
         }
         /// <summary>
-        /// Lists all organizations, in the order that they were created.**Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
+        /// Lists all organizations, in the order that they were created.&gt; [!NOTE]&gt; Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -92,7 +92,7 @@ namespace GitHub.Organizations {
             return new OrganizationsRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// Lists all organizations, in the order that they were created.**Note:** Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
+        /// Lists all organizations, in the order that they were created.&gt; [!NOTE]&gt; Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers) to get the URL for the next page of organizations.
         /// </summary>
         public class OrganizationsRequestBuilderGetQueryParameters 
         {

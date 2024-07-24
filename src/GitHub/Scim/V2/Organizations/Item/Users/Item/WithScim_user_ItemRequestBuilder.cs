@@ -31,7 +31,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
         {
         }
         /// <summary>
-        /// Delete a SCIM user from an organization
+        /// Deletes a SCIM user from an organization.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#delete-a-scim-user-from-an-organization" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -56,7 +56,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Get SCIM provisioning information for a user
+        /// Gets SCIM provisioning information for a user.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#get-scim-provisioning-information-for-a-user" />
         /// </summary>
         /// <returns>A <see cref="ScimUser"/></returns>
@@ -82,7 +82,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             return await RequestAdapter.SendAsync<ScimUser>(requestInfo, ScimUser.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Allows you to change a provisioned user&apos;s individual attributes. To change a user&apos;s values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).**Note:** Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will not work.**Warning:** If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.```{  &quot;Operations&quot;:[{    &quot;op&quot;:&quot;replace&quot;,    &quot;value&quot;:{      &quot;active&quot;:false    }  }]}```
+        /// Allows you to change a provisioned user&apos;s individual attributes. To change a user&apos;s values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will not work.&gt; [!WARNING]&gt; If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user" />
         /// </summary>
         /// <returns>A <see cref="ScimUser"/></returns>
@@ -114,7 +114,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             return await RequestAdapter.SendAsync<ScimUser>(requestInfo, ScimUser.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Replaces an existing provisioned user&apos;s information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don&apos;t provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.**Warning:** Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
+        /// Replaces an existing provisioned user&apos;s information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don&apos;t provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.&gt; [!WARNING]&gt; Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-a-provisioned-organization-membership" />
         /// </summary>
         /// <returns>A <see cref="ScimUser"/></returns>
@@ -141,6 +141,9 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             };
             return await RequestAdapter.SendAsync<ScimUser>(requestInfo, ScimUser.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
+        /// <summary>
+        /// Deletes a SCIM user from an organization.
+        /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -157,6 +160,9 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             requestInfo.Headers.TryAdd("Accept", "application/json, application/scim+json");
             return requestInfo;
         }
+        /// <summary>
+        /// Gets SCIM provisioning information for a user.
+        /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -174,7 +180,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             return requestInfo;
         }
         /// <summary>
-        /// Allows you to change a provisioned user&apos;s individual attributes. To change a user&apos;s values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).**Note:** Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will not work.**Warning:** If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.```{  &quot;Operations&quot;:[{    &quot;op&quot;:&quot;replace&quot;,    &quot;value&quot;:{      &quot;active&quot;:false    }  }]}```
+        /// Allows you to change a provisioned user&apos;s individual attributes. To change a user&apos;s values, you must provide a specific `Operations` JSON format that contains at least one of the `add`, `remove`, or `replace` operations. For examples and more information on the SCIM operations format, see the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complicated SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will not work.&gt; [!WARNING]&gt; If you set `active:false` using the `replace` operation (as shown in the JSON example below), it removes the user from the organization, deletes the external identity, and deletes the associated `:scim_user_id`.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -196,7 +202,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item {
             return requestInfo;
         }
         /// <summary>
-        /// Replaces an existing provisioned user&apos;s information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don&apos;t provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.**Warning:** Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
+        /// Replaces an existing provisioned user&apos;s information. You must provide all the information required for the user as if you were provisioning them for the first time. Any existing user information that you don&apos;t provide will be removed. If you want to only update a specific attribute, use the [Update an attribute for a SCIM user](https://docs.github.com/enterprise-cloud@latest//rest/scim/scim#update-an-attribute-for-a-scim-user) endpoint instead.You must at least provide the required values for the user: `userName`, `name`, and `emails`.&gt; [!WARNING]&gt; Setting `active: false` removes the user from the organization, deletes the external identity, and deletes the associated `{scim_user_id}`.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
