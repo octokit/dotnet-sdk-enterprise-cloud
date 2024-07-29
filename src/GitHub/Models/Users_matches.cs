@@ -5,39 +5,44 @@ using System.IO;
 using System.Linq;
 using System;
 namespace GitHub.Models {
-    /// <summary>
-    /// &gt; [!NOTE]&gt; `max_file_path_length` is in beta and subject to change.Prevent commits that include file paths that exceed a specified character limit from being pushed to the commit graph.
-    /// </summary>
-    public class Max_file_path_length : IAdditionalDataHolder, IParsable 
+    #pragma warning disable CS1591
+    public class Users_matches : IAdditionalDataHolder, IParsable 
+    #pragma warning restore CS1591
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>The parameters property</summary>
+        /// <summary>The indices property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public Max_file_path_length_parameters? Parameters { get; set; }
+        public List<int?>? Indices { get; set; }
 #nullable restore
 #else
-        public Max_file_path_length_parameters Parameters { get; set; }
+        public List<int?> Indices { get; set; }
 #endif
-        /// <summary>The type property</summary>
-        public Max_file_path_length_type? Type { get; set; }
+        /// <summary>The text property</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public string? Text { get; set; }
+#nullable restore
+#else
+        public string Text { get; set; }
+#endif
         /// <summary>
-        /// Instantiates a new <see cref="Max_file_path_length"/> and sets the default values.
+        /// Instantiates a new <see cref="Users_matches"/> and sets the default values.
         /// </summary>
-        public Max_file_path_length()
+        public Users_matches()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="Max_file_path_length"/></returns>
+        /// <returns>A <see cref="Users_matches"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static Max_file_path_length CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static Users_matches CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new Max_file_path_length();
+            return new Users_matches();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -47,8 +52,8 @@ namespace GitHub.Models {
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                {"parameters", n => { Parameters = n.GetObjectValue<Max_file_path_length_parameters>(Max_file_path_length_parameters.CreateFromDiscriminatorValue); } },
-                {"type", n => { Type = n.GetEnumValue<Max_file_path_length_type>(); } },
+                {"indices", n => { Indices = n.GetCollectionOfPrimitiveValues<int?>()?.ToList(); } },
+                {"text", n => { Text = n.GetStringValue(); } },
             };
         }
         /// <summary>
@@ -58,8 +63,8 @@ namespace GitHub.Models {
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<Max_file_path_length_parameters>("parameters", Parameters);
-            writer.WriteEnumValue<Max_file_path_length_type>("type", Type);
+            writer.WriteCollectionOfPrimitiveValues<int?>("indices", Indices);
+            writer.WriteStringValue("text", Text);
             writer.WriteAdditionalData(AdditionalData);
         }
     }
