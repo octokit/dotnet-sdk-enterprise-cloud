@@ -11,6 +11,7 @@ using GitHub.Enterprises.Item.Item;
 using GitHub.Enterprises.Item.LicenseSyncStatus;
 using GitHub.Enterprises.Item.SecretScanning;
 using GitHub.Enterprises.Item.Settings;
+using GitHub.Enterprises.Item.Team;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
@@ -77,6 +78,11 @@ namespace GitHub.Enterprises.Item {
         public SettingsRequestBuilder Settings
         {
             get => new SettingsRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The team property</summary>
+        public TeamRequestBuilder Team
+        {
+            get => new TeamRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>Gets an item from the GitHub.enterprises.item.item collection</summary>
         /// <param name="position">The security feature to enable or disable.</param>

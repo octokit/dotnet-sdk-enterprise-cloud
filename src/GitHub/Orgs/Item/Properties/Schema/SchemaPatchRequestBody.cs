@@ -15,10 +15,10 @@ namespace GitHub.Orgs.Item.Properties.Schema {
         /// <summary>The array of custom properties to create or update.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public List<OrgCustomProperty>? Properties { get; set; }
+        public List<CustomProperty>? Properties { get; set; }
 #nullable restore
 #else
-        public List<OrgCustomProperty> Properties { get; set; }
+        public List<CustomProperty> Properties { get; set; }
 #endif
         /// <summary>
         /// Instantiates a new <see cref="SchemaPatchRequestBody"/> and sets the default values.
@@ -45,7 +45,7 @@ namespace GitHub.Orgs.Item.Properties.Schema {
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                {"properties", n => { Properties = n.GetCollectionOfObjectValues<OrgCustomProperty>(OrgCustomProperty.CreateFromDiscriminatorValue)?.ToList(); } },
+                {"properties", n => { Properties = n.GetCollectionOfObjectValues<CustomProperty>(CustomProperty.CreateFromDiscriminatorValue)?.ToList(); } },
             };
         }
         /// <summary>
@@ -55,7 +55,7 @@ namespace GitHub.Orgs.Item.Properties.Schema {
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteCollectionOfObjectValues<OrgCustomProperty>("properties", Properties);
+            writer.WriteCollectionOfObjectValues<CustomProperty>("properties", Properties);
             writer.WriteAdditionalData(AdditionalData);
         }
     }
