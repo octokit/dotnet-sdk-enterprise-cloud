@@ -72,6 +72,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.CostCenters.Item.Resource {
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="BasicError">When receiving a 400 status code</exception>
         /// <exception cref="BasicError">When receiving a 403 status code</exception>
+        /// <exception cref="BasicError">When receiving a 409 status code</exception>
         /// <exception cref="BasicError">When receiving a 500 status code</exception>
         /// <exception cref="Resource503Error">When receiving a 503 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -89,6 +90,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.CostCenters.Item.Resource {
             {
                 {"400", BasicError.CreateFromDiscriminatorValue},
                 {"403", BasicError.CreateFromDiscriminatorValue},
+                {"409", BasicError.CreateFromDiscriminatorValue},
                 {"500", BasicError.CreateFromDiscriminatorValue},
                 {"503", Resource503Error.CreateFromDiscriminatorValue},
             };

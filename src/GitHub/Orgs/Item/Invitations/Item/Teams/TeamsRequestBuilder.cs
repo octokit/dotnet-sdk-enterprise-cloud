@@ -34,7 +34,7 @@ namespace GitHub.Orgs.Item.Invitations.Item.Teams {
         /// List all teams associated with an invitation. In order to see invitationsin an organization, the authenticated user must be an organization owner.This endpoint is not available for [Enterprise Managed User (EMU) organizations](https://docs.github.com/enterprise-cloud@latest//admin/identity-and-access-management/using-enterprise-managed-users-for-iam/about-enterprise-managed-users).
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/members#list-organization-invitation-teams" />
         /// </summary>
-        /// <returns>A List&lt;Team&gt;</returns>
+        /// <returns>A List&lt;GitHub.Models.Team&gt;</returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="BasicError">When receiving a 404 status code</exception>
