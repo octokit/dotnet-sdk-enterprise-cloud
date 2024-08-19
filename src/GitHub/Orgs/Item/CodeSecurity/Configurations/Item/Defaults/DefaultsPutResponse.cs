@@ -15,10 +15,10 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations.Item.Defaults {
         /// <summary>A code security configuration</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public CodeSecurityConfiguration? Configuration { get; set; }
+        public GitHub.Models.CodeSecurityConfiguration? Configuration { get; set; }
 #nullable restore
 #else
-        public CodeSecurityConfiguration Configuration { get; set; }
+        public GitHub.Models.CodeSecurityConfiguration Configuration { get; set; }
 #endif
         /// <summary>Specifies which types of repository this security configuration is applied to by default.</summary>
         public DefaultsPutResponse_default_for_new_repos? DefaultForNewRepos { get; set; }
@@ -47,7 +47,7 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations.Item.Defaults {
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                {"configuration", n => { Configuration = n.GetObjectValue<CodeSecurityConfiguration>(CodeSecurityConfiguration.CreateFromDiscriminatorValue); } },
+                {"configuration", n => { Configuration = n.GetObjectValue<GitHub.Models.CodeSecurityConfiguration>(GitHub.Models.CodeSecurityConfiguration.CreateFromDiscriminatorValue); } },
                 {"default_for_new_repos", n => { DefaultForNewRepos = n.GetEnumValue<DefaultsPutResponse_default_for_new_repos>(); } },
             };
         }
@@ -58,7 +58,7 @@ namespace GitHub.Orgs.Item.CodeSecurity.Configurations.Item.Defaults {
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteObjectValue<CodeSecurityConfiguration>("configuration", Configuration);
+            writer.WriteObjectValue<GitHub.Models.CodeSecurityConfiguration>("configuration", Configuration);
             writer.WriteEnumValue<DefaultsPutResponse_default_for_new_repos>("default_for_new_repos", DefaultForNewRepos);
             writer.WriteAdditionalData(AdditionalData);
         }
