@@ -11,23 +11,45 @@ namespace GitHub.Models {
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>Whether this email address is the primary address.</summary>
-        public bool? Primary { get; set; }
-        /// <summary>The type of email address.</summary>
+        /// <summary>The fragment property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Type { get; set; }
+        public string? Fragment { get; set; }
 #nullable restore
 #else
-        public string Type { get; set; }
+        public string Fragment { get; set; }
 #endif
-        /// <summary>The email address.</summary>
+        /// <summary>The matches property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? Value { get; set; }
+        public List<Users_matches>? Matches { get; set; }
 #nullable restore
 #else
-        public string Value { get; set; }
+        public List<Users_matches> Matches { get; set; }
+#endif
+        /// <summary>The object_type property</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public string? ObjectType { get; set; }
+#nullable restore
+#else
+        public string ObjectType { get; set; }
+#endif
+        /// <summary>The object_url property</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public string? ObjectUrl { get; set; }
+#nullable restore
+#else
+        public string ObjectUrl { get; set; }
+#endif
+        /// <summary>The property property</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public string? Property { get; set; }
+#nullable restore
+#else
+        public string Property { get; set; }
 #endif
         /// <summary>
         /// Instantiates a new <see cref="Users"/> and sets the default values.
@@ -54,9 +76,11 @@ namespace GitHub.Models {
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                {"primary", n => { Primary = n.GetBoolValue(); } },
-                {"type", n => { Type = n.GetStringValue(); } },
-                {"value", n => { Value = n.GetStringValue(); } },
+                {"fragment", n => { Fragment = n.GetStringValue(); } },
+                {"matches", n => { Matches = n.GetCollectionOfObjectValues<Users_matches>(Users_matches.CreateFromDiscriminatorValue)?.ToList(); } },
+                {"object_type", n => { ObjectType = n.GetStringValue(); } },
+                {"object_url", n => { ObjectUrl = n.GetStringValue(); } },
+                {"property", n => { Property = n.GetStringValue(); } },
             };
         }
         /// <summary>
@@ -66,9 +90,11 @@ namespace GitHub.Models {
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteBoolValue("primary", Primary);
-            writer.WriteStringValue("type", Type);
-            writer.WriteStringValue("value", Value);
+            writer.WriteStringValue("fragment", Fragment);
+            writer.WriteCollectionOfObjectValues<Users_matches>("matches", Matches);
+            writer.WriteStringValue("object_type", ObjectType);
+            writer.WriteStringValue("object_url", ObjectUrl);
+            writer.WriteStringValue("property", Property);
             writer.WriteAdditionalData(AdditionalData);
         }
     }
