@@ -3,44 +3,46 @@ using GitHub.Models;
 using GitHub.Orgs.Item.OrganizationRoles.Item;
 using GitHub.Orgs.Item.OrganizationRoles.Teams;
 using GitHub.Orgs.Item.OrganizationRoles.Users;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace GitHub.Orgs.Item.OrganizationRoles {
+namespace GitHub.Orgs.Item.OrganizationRoles
+{
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\organization-roles
     /// </summary>
-    public class OrganizationRolesRequestBuilder : BaseRequestBuilder 
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    public partial class OrganizationRolesRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The teams property</summary>
-        public TeamsRequestBuilder Teams
+        public global::GitHub.Orgs.Item.OrganizationRoles.Teams.TeamsRequestBuilder Teams
         {
-            get => new TeamsRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Orgs.Item.OrganizationRoles.Teams.TeamsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The users property</summary>
-        public UsersRequestBuilder Users
+        public global::GitHub.Orgs.Item.OrganizationRoles.Users.UsersRequestBuilder Users
         {
-            get => new UsersRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Orgs.Item.OrganizationRoles.Users.UsersRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>Gets an item from the GitHub.orgs.item.organizationRoles.item collection</summary>
         /// <param name="position">The unique identifier of the role.</param>
-        /// <returns>A <see cref="WithRole_ItemRequestBuilder"/></returns>
-        public WithRole_ItemRequestBuilder this[int position]
+        /// <returns>A <see cref="global::GitHub.Orgs.Item.OrganizationRoles.Item.WithRole_ItemRequestBuilder"/></returns>
+        public global::GitHub.Orgs.Item.OrganizationRoles.Item.WithRole_ItemRequestBuilder this[int position]
         {
             get
             {
                 var urlTplParams = new Dictionary<string, object>(PathParameters);
                 urlTplParams.Add("role_id", position);
-                return new WithRole_ItemRequestBuilder(urlTplParams, RequestAdapter);
+                return new global::GitHub.Orgs.Item.OrganizationRoles.Item.WithRole_ItemRequestBuilder(urlTplParams, RequestAdapter);
             }
         }
         /// <summary>
-        /// Instantiates a new <see cref="OrganizationRolesRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -48,7 +50,7 @@ namespace GitHub.Orgs.Item.OrganizationRoles {
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="OrganizationRolesRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -59,57 +61,57 @@ namespace GitHub.Orgs.Item.OrganizationRoles {
         /// Lists the organization roles available in this organization. For more information on organization roles, see &quot;[Using organization roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/using-organization-roles).&quot;To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `read_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/organization-roles#get-all-organization-roles-for-an-organization" />
         /// </summary>
-        /// <returns>A <see cref="OrganizationRolesGetResponse"/></returns>
+        /// <returns>A <see cref="global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesGetResponse"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
-        /// <exception cref="BasicError">When receiving a 404 status code</exception>
-        /// <exception cref="ValidationError">When receiving a 422 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        /// <exception cref="global::GitHub.Models.ValidationError">When receiving a 422 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<OrganizationRolesGetResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesGetResponse?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<OrganizationRolesGetResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesGetResponse> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
-                {"404", BasicError.CreateFromDiscriminatorValue},
-                {"422", ValidationError.CreateFromDiscriminatorValue},
+                { "404", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "422", global::GitHub.Models.ValidationError.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<OrganizationRolesGetResponse>(requestInfo, OrganizationRolesGetResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesGetResponse>(requestInfo, global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesGetResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Creates a custom organization role that can be assigned to users and teams, granting them specific permissions over the organization. For more information on custom organization roles, see &quot;[Managing people&apos;s access to your organization with roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles).&quot;To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `write_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
+        /// Creates a custom organization role that can be assigned to users and teams, granting them specificpermissions over the organization and optionally across all repositories in the organization. Formore information on custom organization roles, see &quot;[Managing people&apos;s access to your organization with roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles).&quot;To include repository permissions in an organization role, you must also include the `base_role`field, which is one of `read`, `write`, `triage`, `maintain`, or `admin` (or `none` if no base role is set). This base role provides a set offine-grained permissions as well as implicit permissions - those that aren&apos;t exposed as fine-grained permissionsand can only be granted through the base role (like &quot;reading a repo&quot;).  If you include repository permissions, thosepermissions apply across all of the repositories in the organization. You do not have to include organization permissionsin order to add repository permissions.See &quot;[List repository permissions](https://docs.github.com/enterprise-cloud@latest//rest/orgs/custom-roles#list-repository-fine-grained-permissions-for-an-organization)&quot; for valid repository permissions.To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `write_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/organization-roles#create-a-custom-organization-role" />
         /// </summary>
-        /// <returns>A <see cref="OrganizationRole"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.OrganizationRole"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
-        /// <exception cref="BasicError">When receiving a 404 status code</exception>
-        /// <exception cref="BasicError">When receiving a 409 status code</exception>
-        /// <exception cref="ValidationError">When receiving a 422 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 409 status code</exception>
+        /// <exception cref="global::GitHub.Models.ValidationError">When receiving a 422 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<OrganizationRole?> PostAsync(OrganizationRolesPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.OrganizationRole?> PostAsync(global::GitHub.Models.OrganizationCustomOrganizationRoleCreateSchema body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<OrganizationRole> PostAsync(OrganizationRolesPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.OrganizationRole> PostAsync(global::GitHub.Models.OrganizationCustomOrganizationRoleCreateSchema body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPostRequestInformation(body, requestConfiguration);
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
-                {"404", BasicError.CreateFromDiscriminatorValue},
-                {"409", BasicError.CreateFromDiscriminatorValue},
-                {"422", ValidationError.CreateFromDiscriminatorValue},
+                { "404", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "409", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "422", global::GitHub.Models.ValidationError.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<OrganizationRole>(requestInfo, OrganizationRole.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Models.OrganizationRole>(requestInfo, global::GitHub.Models.OrganizationRole.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Lists the organization roles available in this organization. For more information on organization roles, see &quot;[Using organization roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/using-organization-roles).&quot;To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `read_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
@@ -131,18 +133,18 @@ namespace GitHub.Orgs.Item.OrganizationRoles {
             return requestInfo;
         }
         /// <summary>
-        /// Creates a custom organization role that can be assigned to users and teams, granting them specific permissions over the organization. For more information on custom organization roles, see &quot;[Managing people&apos;s access to your organization with roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles).&quot;To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `write_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
+        /// Creates a custom organization role that can be assigned to users and teams, granting them specificpermissions over the organization and optionally across all repositories in the organization. Formore information on custom organization roles, see &quot;[Managing people&apos;s access to your organization with roles](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/about-custom-organization-roles).&quot;To include repository permissions in an organization role, you must also include the `base_role`field, which is one of `read`, `write`, `triage`, `maintain`, or `admin` (or `none` if no base role is set). This base role provides a set offine-grained permissions as well as implicit permissions - those that aren&apos;t exposed as fine-grained permissionsand can only be granted through the base role (like &quot;reading a repo&quot;).  If you include repository permissions, thosepermissions apply across all of the repositories in the organization. You do not have to include organization permissionsin order to add repository permissions.See &quot;[List repository permissions](https://docs.github.com/enterprise-cloud@latest//rest/orgs/custom-roles#list-repository-fine-grained-permissions-for-an-organization)&quot; for valid repository permissions.To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permissions of `write_organization_custom_org_role` in the organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(OrganizationRolesPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::GitHub.Models.OrganizationCustomOrganizationRoleCreateSchema body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(OrganizationRolesPostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::GitHub.Models.OrganizationCustomOrganizationRoleCreateSchema body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
@@ -155,11 +157,11 @@ namespace GitHub.Orgs.Item.OrganizationRoles {
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="OrganizationRolesRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public OrganizationRolesRequestBuilder WithUrl(string rawUrl)
+        public global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesRequestBuilder WithUrl(string rawUrl)
         {
-            return new OrganizationRolesRequestBuilder(rawUrl, RequestAdapter);
+            return new global::GitHub.Orgs.Item.OrganizationRoles.OrganizationRolesRequestBuilder(rawUrl, RequestAdapter);
         }
     }
 }

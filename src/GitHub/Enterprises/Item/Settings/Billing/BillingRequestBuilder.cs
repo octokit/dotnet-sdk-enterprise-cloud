@@ -5,50 +5,52 @@ using GitHub.Enterprises.Item.Settings.Billing.CostCenters;
 using GitHub.Enterprises.Item.Settings.Billing.Packages;
 using GitHub.Enterprises.Item.Settings.Billing.SharedStorage;
 using GitHub.Enterprises.Item.Settings.Billing.Usage;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
-namespace GitHub.Enterprises.Item.Settings.Billing {
+namespace GitHub.Enterprises.Item.Settings.Billing
+{
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\settings\billing
     /// </summary>
-    public class BillingRequestBuilder : BaseRequestBuilder 
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    public partial class BillingRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The actions property</summary>
-        public ActionsRequestBuilder Actions
+        public global::GitHub.Enterprises.Item.Settings.Billing.Actions.ActionsRequestBuilder Actions
         {
-            get => new ActionsRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.Actions.ActionsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The advancedSecurity property</summary>
-        public AdvancedSecurityRequestBuilder AdvancedSecurity
+        public global::GitHub.Enterprises.Item.Settings.Billing.AdvancedSecurity.AdvancedSecurityRequestBuilder AdvancedSecurity
         {
-            get => new AdvancedSecurityRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.AdvancedSecurity.AdvancedSecurityRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The costCenters property</summary>
-        public CostCentersRequestBuilder CostCenters
+        public global::GitHub.Enterprises.Item.Settings.Billing.CostCenters.CostCentersRequestBuilder CostCenters
         {
-            get => new CostCentersRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.CostCenters.CostCentersRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The packages property</summary>
-        public PackagesRequestBuilder Packages
+        public global::GitHub.Enterprises.Item.Settings.Billing.Packages.PackagesRequestBuilder Packages
         {
-            get => new PackagesRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.Packages.PackagesRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The sharedStorage property</summary>
-        public SharedStorageRequestBuilder SharedStorage
+        public global::GitHub.Enterprises.Item.Settings.Billing.SharedStorage.SharedStorageRequestBuilder SharedStorage
         {
-            get => new SharedStorageRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.SharedStorage.SharedStorageRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The usage property</summary>
-        public UsageRequestBuilder Usage
+        public global::GitHub.Enterprises.Item.Settings.Billing.Usage.UsageRequestBuilder Usage
         {
-            get => new UsageRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Enterprises.Item.Settings.Billing.Usage.UsageRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="BillingRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Enterprises.Item.Settings.Billing.BillingRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -56,7 +58,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing {
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="BillingRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Enterprises.Item.Settings.Billing.BillingRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>

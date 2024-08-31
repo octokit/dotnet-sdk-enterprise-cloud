@@ -2,32 +2,34 @@
 using GitHub.Models;
 using GitHub.Orgs.Item.Actions.RunnerGroups.Item.Repositories;
 using GitHub.Orgs.Item.Actions.RunnerGroups.Item.Runners;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item {
+namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item
+{
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\actions\runner-groups\{runner_group_id}
     /// </summary>
-    public class WithRunner_group_ItemRequestBuilder : BaseRequestBuilder 
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    public partial class WithRunner_group_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The repositories property</summary>
-        public RepositoriesRequestBuilder Repositories
+        public global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.Repositories.RepositoriesRequestBuilder Repositories
         {
-            get => new RepositoriesRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.Repositories.RepositoriesRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The runners property</summary>
-        public RunnersRequestBuilder Runners
+        public global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.Runners.RunnersRequestBuilder Runners
         {
-            get => new RunnersRequestBuilder(PathParameters, RequestAdapter);
+            get => new global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.Runners.RunnersRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="WithRunner_group_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -35,7 +37,7 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item {
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="WithRunner_group_ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -64,41 +66,41 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item {
         /// Gets a specific self-hosted runner group for an organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/actions/self-hosted-runner-groups#get-a-self-hosted-runner-group-for-an-organization" />
         /// </summary>
-        /// <returns>A <see cref="RunnerGroupsOrg"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.RunnerGroupsOrg"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<RunnerGroupsOrg?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RunnerGroupsOrg?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<RunnerGroupsOrg> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RunnerGroupsOrg> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
-            return await RequestAdapter.SendAsync<RunnerGroupsOrg>(requestInfo, RunnerGroupsOrg.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Models.RunnerGroupsOrg>(requestInfo, global::GitHub.Models.RunnerGroupsOrg.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Updates the `name` and `visibility` of a self-hosted runner group in an organization.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/actions/self-hosted-runner-groups#update-a-self-hosted-runner-group-for-an-organization" />
         /// </summary>
-        /// <returns>A <see cref="RunnerGroupsOrg"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.RunnerGroupsOrg"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<RunnerGroupsOrg?> PatchAsync(WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RunnerGroupsOrg?> PatchAsync(global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<RunnerGroupsOrg> PatchAsync(WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RunnerGroupsOrg> PatchAsync(global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPatchRequestInformation(body, requestConfiguration);
-            return await RequestAdapter.SendAsync<RunnerGroupsOrg>(requestInfo, RunnerGroupsOrg.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Models.RunnerGroupsOrg>(requestInfo, global::GitHub.Models.RunnerGroupsOrg.CreateFromDiscriminatorValue, default, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
         /// Deletes a self-hosted runner group for an organization.OAuth tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
@@ -145,11 +147,11 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item {
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPatchRequestInformation(WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPatchRequestInformation(global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPatchRequestInformation(WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPatchRequestInformation(global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_PatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
@@ -162,11 +164,11 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item {
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="WithRunner_group_ItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public WithRunner_group_ItemRequestBuilder WithUrl(string rawUrl)
+        public global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_ItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new WithRunner_group_ItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::GitHub.Orgs.Item.Actions.RunnerGroups.Item.WithRunner_group_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
     }
 }

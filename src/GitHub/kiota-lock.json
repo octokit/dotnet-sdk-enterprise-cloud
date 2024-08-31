@@ -1,14 +1,15 @@
 {
-  "descriptionHash": "069085907BD8F22D78802FEE2B193F25030EDB28E6ABA9F8632E157685FD6322ED131E8921518F618D2A5EDECB77292DB749B1C8FDD3ABD76BCD812213BEB221",
+  "descriptionHash": "87541D93EDF176CF48CF693C5A0CEC8535C3F31A04143E83CBD21DCD3F0A2BEA523BCCD97793ADC61FB9617B2EAD3534F75AD2834D35724B836586F14C4F19BA",
   "descriptionLocation": "../../../../../schemas/ghec.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.14.0",
+  "kiotaVersion": "1.17.0",
   "clientClassName": "GitHubClient",
   "clientNamespaceName": "GitHub",
   "language": "CSharp",
   "usesBackingStore": false,
   "excludeBackwardCompatible": true,
   "includeAdditionalData": true,
+  "disableSSLValidation": false,
   "serializers": [
     "Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory",
     "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory",
