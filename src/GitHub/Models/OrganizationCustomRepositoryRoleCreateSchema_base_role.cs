@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>The system role from which this role inherits permissions.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
     public enum OrganizationCustomRepositoryRoleCreateSchema_base_role
     {
         [EnumMember(Value = "read")]

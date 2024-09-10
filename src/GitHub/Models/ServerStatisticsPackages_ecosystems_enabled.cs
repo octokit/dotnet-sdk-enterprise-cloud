@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>Shows if a package system is enabled, disabled, or read-only in a GHES installation</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
     public enum ServerStatisticsPackages_ecosystems_enabled
     {
         [EnumMember(Value = "TRUE")]

@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Orgs.Item.Actions.RunnerGroups
 {
     /// <summary>Visibility of a runner group. You can select all repositories, select individual repositories, or limit access to private repositories.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
     public enum RunnerGroupsPostRequestBody_visibility
     {
         [EnumMember(Value = "selected")]
