@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Item.Item
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\{security_product}\{enablement}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithEnablementItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -34,12 +34,13 @@ namespace GitHub.Enterprises.Item.Item.Item
         {
         }
         /// <summary>
-        /// Enables or disables the specified security feature for all repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to enable or disable a security feature for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Enables or disables the specified security feature for all repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/code-security-and-analysis#enable-or-disable-a-security-feature" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public async Task PostAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
@@ -57,10 +58,11 @@ namespace GitHub.Enterprises.Item.Item.Item
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Enables or disables the specified security feature for all repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to enable or disable a security feature for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Enables or disables the specified security feature for all repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public RequestInformation ToPostRequestInformation(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
@@ -80,6 +82,7 @@ namespace GitHub.Enterprises.Item.Item.Item
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Enterprises.Item.Item.Item.WithEnablementItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
+        [Obsolete("")]
         public global::GitHub.Enterprises.Item.Item.Item.WithEnablementItemRequestBuilder WithUrl(string rawUrl)
         {
             return new global::GitHub.Enterprises.Item.Item.Item.WithEnablementItemRequestBuilder(rawUrl, RequestAdapter);

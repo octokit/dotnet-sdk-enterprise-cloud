@@ -12,7 +12,7 @@ namespace GitHub.Orgs.Item.Teams.Item.TeamSync
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\teams\{team_slug}\team-sync
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class TeamSyncRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The groupMappings property</summary>

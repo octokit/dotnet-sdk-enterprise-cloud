@@ -14,7 +14,7 @@ namespace GitHub.Orgs.Item.Invitations.Item.Teams
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\invitations\{invitation_id}\teams
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class TeamsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -89,7 +89,7 @@ namespace GitHub.Orgs.Item.Invitations.Item.Teams
         /// <summary>
         /// List all teams associated with an invitation. In order to see invitationsin an organization, the authenticated user must be an organization owner.This endpoint is not available for [Enterprise Managed User (EMU) organizations](https://docs.github.com/enterprise-cloud@latest//admin/identity-and-access-management/using-enterprise-managed-users-for-iam/about-enterprise-managed-users).
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class TeamsRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

@@ -10,12 +10,12 @@ namespace GitHub.Models
     /// <summary>
     /// An actor that can bypass rules in a ruleset
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class RepositoryRulesetBypassActor : IAdditionalDataHolder, IParsable
     {
-        /// <summary>The ID of the actor that can bypass a ruleset. If `actor_type` is `OrganizationAdmin`, this should be `1`. If `actor_type` is `DeployKey`, this should be null. `OrganizationAdmin` is not applicable for personal repositories.</summary>
+        /// <summary>The ID of the actor that can bypass a ruleset. If `actor_type` is `OrganizationAdmin`, this should be `1`. If `actor_type` is `DeployKey`, this should be null. If `actor_type` is `EnterpriseOwner`, `actor_id` is ignored. `OrganizationAdmin` and `EnterpriseOwner` are not applicable for personal repositories.</summary>
         public int? ActorId { get; set; }
-        /// <summary>The type of actor that can bypass a ruleset.</summary>
+        /// <summary>The type of actor that can bypass a ruleset</summary>
         public global::GitHub.Models.RepositoryRulesetBypassActor_actor_type? ActorType { get; set; }
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }

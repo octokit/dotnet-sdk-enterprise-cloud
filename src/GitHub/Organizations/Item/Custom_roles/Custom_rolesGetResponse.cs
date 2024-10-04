@@ -8,7 +8,7 @@ using System.IO;
 using System;
 namespace GitHub.Organizations.Item.Custom_roles
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     #pragma warning disable CS1591
     public partial class Custom_rolesGetResponse : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591

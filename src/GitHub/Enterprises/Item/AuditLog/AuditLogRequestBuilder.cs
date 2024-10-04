@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.AuditLog
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\audit-log
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class AuditLogRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -84,7 +84,7 @@ namespace GitHub.Enterprises.Item.AuditLog
         /// <summary>
         /// Gets the audit log for an enterprise.This endpoint has a rate limit of 1,750 queries per hour per user and IP address. If your integration receives a rate limit error (typically a 403 or 429 response), it should wait before making another request to the GitHub API. For more information, see &quot;[Rate limits for the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/rate-limits-for-the-rest-api)&quot; and &quot;[Best practices for integrators](https://docs.github.com/enterprise-cloud@latest//rest/guides/best-practices-for-integrators).&quot;The authenticated user must be an enterprise admin to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:audit_log` scope to use this endpoint.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class AuditLogRequestBuilderGetQueryParameters 
         {
             /// <summary>A cursor, as given in the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers). If specified, the query only searches for events after this cursor.</summary>

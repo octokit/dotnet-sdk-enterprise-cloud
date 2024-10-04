@@ -14,7 +14,7 @@ namespace GitHub.Orgs.Item.ExternalGroup.Item
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\external-group\{group_id}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithGroup_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -83,7 +83,7 @@ namespace GitHub.Orgs.Item.ExternalGroup.Item
         /// <summary>
         /// Displays information about the specific group&apos;s usage.  Provides a list of the group&apos;s external members as well as a list of teams that this group is connected to.You can manage team membership with your identity provider using Enterprise Managed Users for GitHub Enterprise Cloud. For more information, see &quot;[GitHub&apos;s products](https://docs.github.com/enterprise-cloud@latest//github/getting-started-with-github/githubs-products)&quot; in the GitHub Help documentation.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class WithGroup_ItemRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the &quot;members&quot; array results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

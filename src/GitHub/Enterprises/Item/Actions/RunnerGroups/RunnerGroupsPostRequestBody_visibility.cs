@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Enterprises.Item.Actions.RunnerGroups
 {
     /// <summary>Visibility of a runner group. You can select all organizations or select individual organization.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public enum RunnerGroupsPostRequestBody_visibility
     {
         [EnumMember(Value = "selected")]

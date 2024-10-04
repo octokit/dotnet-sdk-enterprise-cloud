@@ -12,7 +12,7 @@ namespace GitHub.Scim.V2.Organizations.Item
     /// <summary>
     /// Builds and executes requests for operations under \scim\v2\organizations\{org}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithOrgItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The Users property</summary>

@@ -13,7 +13,7 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups.Item.Repositories.Item
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\actions\runner-groups\{runner_group_id}\repositories\{repository_id}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithRepository_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

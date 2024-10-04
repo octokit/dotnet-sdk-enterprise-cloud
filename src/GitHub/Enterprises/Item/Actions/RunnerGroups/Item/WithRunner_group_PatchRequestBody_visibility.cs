@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Enterprises.Item.Actions.RunnerGroups.Item
 {
     /// <summary>Visibility of a runner group. You can select all organizations or select individual organizations.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public enum WithRunner_group_PatchRequestBody_visibility
     {
         [EnumMember(Value = "selected")]

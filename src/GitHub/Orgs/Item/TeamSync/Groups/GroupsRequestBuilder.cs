@@ -14,7 +14,7 @@ namespace GitHub.Orgs.Item.TeamSync.Groups
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\team-sync\groups
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class GroupsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -83,7 +83,7 @@ namespace GitHub.Orgs.Item.TeamSync.Groups
         /// <summary>
         /// Lists IdP groups available in an organization.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class GroupsRequestBuilderGetQueryParameters 
         {
             /// <summary>Page token</summary>

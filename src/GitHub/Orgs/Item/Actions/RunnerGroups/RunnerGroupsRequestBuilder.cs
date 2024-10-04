@@ -15,7 +15,7 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\actions\runner-groups
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class RunnerGroupsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.orgs.item.actions.runnerGroups.item collection</summary>
@@ -139,7 +139,7 @@ namespace GitHub.Orgs.Item.Actions.RunnerGroups
         /// <summary>
         /// Lists all self-hosted runner groups configured in an organization and inherited from an enterprise.OAuth app tokens and personal access tokens (classic) need the `admin:org` scope to use this endpoint.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class RunnerGroupsRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

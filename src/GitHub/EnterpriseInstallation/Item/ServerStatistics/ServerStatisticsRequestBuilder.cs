@@ -14,7 +14,7 @@ namespace GitHub.EnterpriseInstallation.Item.ServerStatistics
     /// <summary>
     /// Builds and executes requests for operations under \enterprise-installation\{enterprise_or_org}\server-statistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class ServerStatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -84,7 +84,7 @@ namespace GitHub.EnterpriseInstallation.Item.ServerStatistics
         /// <summary>
         /// Returns aggregate usage metrics for your GitHub Enterprise Server 3.5+ instance for a specified time period up to 365 days.To use this endpoint, your GitHub Enterprise Server instance must be connected to GitHub Enterprise Cloud using GitHub Connect. You must enable Server Statistics, and for the API request provide your enterprise account name or organization name connected to the GitHub Enterprise Server. For more information, see &quot;[Enabling Server Statistics for your enterprise](/admin/configuration/configuring-github-connect/enabling-server-statistics-for-your-enterprise)&quot; in the GitHub Enterprise Server documentation.OAuth app tokens and personal access tokens (classic) need:  - the `read:enterprise` scope if you connected your GitHub Enterprise Server to an enterprise account and enabled Server Statistics  - the `read:org` scope if you connected your GitHub Enterprise Server to an organization account and enabled Server Statistics
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class ServerStatisticsRequestBuilderGetQueryParameters 
         {
             /// <summary>A cursor, as given in the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers). If specified, the query only searches for events before this cursor.</summary>

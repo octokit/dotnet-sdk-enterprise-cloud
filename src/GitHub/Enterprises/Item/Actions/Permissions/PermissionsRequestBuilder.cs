@@ -17,7 +17,7 @@ namespace GitHub.Enterprises.Item.Actions.Permissions
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\actions\permissions
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class PermissionsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The organizations property</summary>

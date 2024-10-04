@@ -3,8 +3,8 @@ using System.Runtime.Serialization;
 using System;
 namespace GitHub.Models
 {
-    /// <summary>The type of actor that can bypass a ruleset.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    /// <summary>The type of actor that can bypass a ruleset</summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public enum RepositoryRulesetBypassActor_actor_type
     {
         [EnumMember(Value = "Integration")]
@@ -26,6 +26,10 @@ namespace GitHub.Models
         [EnumMember(Value = "DeployKey")]
         #pragma warning disable CS1591
         DeployKey,
+        #pragma warning restore CS1591
+        [EnumMember(Value = "EnterpriseOwner")]
+        #pragma warning disable CS1591
+        EnterpriseOwner,
         #pragma warning restore CS1591
     }
 }

@@ -13,7 +13,7 @@ namespace GitHub.Scim.V2.Enterprises.Item
     /// <summary>
     /// Builds and executes requests for operations under \scim\v2\enterprises\{enterprise}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithEnterpriseItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The Groups property</summary>

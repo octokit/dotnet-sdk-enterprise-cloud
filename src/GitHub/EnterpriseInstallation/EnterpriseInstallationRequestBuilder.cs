@@ -12,7 +12,7 @@ namespace GitHub.EnterpriseInstallation
     /// <summary>
     /// Builds and executes requests for operations under \enterprise-installation
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class EnterpriseInstallationRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.enterpriseInstallation.item collection</summary>

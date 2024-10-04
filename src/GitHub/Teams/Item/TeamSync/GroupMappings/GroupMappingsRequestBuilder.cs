@@ -14,7 +14,7 @@ namespace GitHub.Teams.Item.TeamSync.GroupMappings
     /// <summary>
     /// Builds and executes requests for operations under \teams\{team_id}\team-sync\group-mappings
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class GroupMappingsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

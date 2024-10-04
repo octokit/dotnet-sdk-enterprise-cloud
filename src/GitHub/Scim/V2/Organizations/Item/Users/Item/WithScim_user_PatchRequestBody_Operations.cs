@@ -7,7 +7,7 @@ using System.IO;
 using System;
 namespace GitHub.Scim.V2.Organizations.Item.Users.Item
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     #pragma warning disable CS1591
     public partial class WithScim_user_PatchRequestBody_Operations : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
@@ -77,7 +77,7 @@ namespace GitHub.Scim.V2.Organizations.Item.Users.Item
         /// <summary>
         /// Composed type wrapper for classes <see cref="global::GitHub.Scim.V2.Organizations.Item.Users.Item.WithScim_user_PatchRequestBody_Operations_valueMember1"/>, <see cref="string"/>, List&lt;global::GitHub.Scim.V2.Organizations.Item.Users.Item.WithScim_user_PatchRequestBody_Operations_valueMember2&gt;
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class WithScim_user_PatchRequestBody_Operations_value : IComposedTypeWrapper, IParsable
         {
             /// <summary>Composed type representation for type <see cref="string"/></summary>

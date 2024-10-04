@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.SecretScanning.Alerts
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\secret-scanning\alerts
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class AlertsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -91,7 +91,7 @@ namespace GitHub.Enterprises.Item.SecretScanning.Alerts
         /// <summary>
         /// Lists secret scanning alerts for eligible repositories in an enterprise, from newest to oldest.To use this endpoint, you must be a member of the enterprise, and you must use an access token with the `repo` scope or `security_events` scope. Alerts are only returned for organizations in the enterprise for which you are an organization owner or a [security manager](https://docs.github.com/enterprise-cloud@latest//organizations/managing-peoples-access-to-your-organization-with-roles/managing-security-managers-in-your-organization), or for repositories owned by enterprise managed users.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class AlertsRequestBuilderGetQueryParameters 
         {
             /// <summary>A cursor, as given in the [Link header](https://docs.github.com/enterprise-cloud@latest//rest/guides/using-pagination-in-the-rest-api#using-link-headers). If specified, the query only searches for results after this cursor. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

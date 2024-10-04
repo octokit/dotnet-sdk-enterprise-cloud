@@ -18,7 +18,7 @@ namespace GitHub.Enterprises.Item.Actions.Runners
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\actions\runners
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class RunnersRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The downloads property</summary>
@@ -119,7 +119,7 @@ namespace GitHub.Enterprises.Item.Actions.Runners
         /// <summary>
         /// Lists all self-hosted runners configured for an enterprise.OAuth app tokens and personal access tokens (classic) need the `manage_runners:enterprise` scope to use this endpoint.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class RunnersRequestBuilderGetQueryParameters 
         {
             /// <summary>The name of a self-hosted runner.</summary>
