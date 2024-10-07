@@ -10,7 +10,7 @@ namespace GitHub.Models
     /// <summary>
     /// SCIM /Users provisioning endpoints
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class ScimUser : IAdditionalDataHolder, IParsable
     {
         /// <summary>The active status of the User.</summary>

@@ -15,7 +15,7 @@ namespace GitHub.Orgs.Item.Custom_roles
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\custom_roles
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class Custom_rolesRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.orgs.item.custom_roles.item collection</summary>

@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Actions.Permissions.Organizations
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\actions\permissions\organizations
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class OrganizationsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.enterprises.item.actions.permissions.organizations.item collection</summary>
@@ -136,7 +136,7 @@ namespace GitHub.Enterprises.Item.Actions.Permissions.Organizations
         /// <summary>
         /// Lists the organizations that are selected to have GitHub Actions enabled in an enterprise. To use this endpoint, the enterprise permission policy for `enabled_organizations` must be configured to `selected`. For more information, see &quot;[Set GitHub Actions permissions for an enterprise](#set-github-actions-permissions-for-an-enterprise).&quot;OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class OrganizationsRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

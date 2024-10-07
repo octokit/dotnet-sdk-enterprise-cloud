@@ -7,7 +7,7 @@ using System.IO;
 using System;
 namespace GitHub.Models
 {
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     #pragma warning disable CS1591
     public partial class ScimUser_operations : IAdditionalDataHolder, IParsable
     #pragma warning restore CS1591
@@ -77,7 +77,7 @@ namespace GitHub.Models
         /// <summary>
         /// Composed type wrapper for classes <see cref="global::GitHub.Models.ScimUser_operations_valueMember1"/>, <see cref="global::GitHub.Models.ScimUser_operations_valueMember2"/>, <see cref="string"/>
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class ScimUser_operations_value : IComposedTypeWrapper, IParsable
         {
             /// <summary>Composed type representation for type <see cref="global::GitHub.Models.ScimUser_operations_valueMember1"/></summary>

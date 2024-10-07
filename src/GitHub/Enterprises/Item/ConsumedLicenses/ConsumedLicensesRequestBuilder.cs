@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.ConsumedLicenses
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\consumed-licenses
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class ConsumedLicensesRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -83,7 +83,7 @@ namespace GitHub.Enterprises.Item.ConsumedLicenses
         /// <summary>
         /// Lists the license consumption information for all users, including those from connected servers, associated with an enterprise.The authenticated user must be an enterprise admin to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class ConsumedLicensesRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

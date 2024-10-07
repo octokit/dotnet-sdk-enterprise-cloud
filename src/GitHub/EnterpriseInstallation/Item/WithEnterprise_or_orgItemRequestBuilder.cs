@@ -12,7 +12,7 @@ namespace GitHub.EnterpriseInstallation.Item
     /// <summary>
     /// Builds and executes requests for operations under \enterprise-installation\{enterprise_or_org}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithEnterprise_or_orgItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The serverStatistics property</summary>

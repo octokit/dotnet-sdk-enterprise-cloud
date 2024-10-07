@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\code_security_and_analysis
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class Code_security_and_analysisRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -34,13 +34,14 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
         {
         }
         /// <summary>
-        /// Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to fetch code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/code-security-and-analysis#get-code-security-and-analysis-features-for-an-enterprise" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.EnterpriseSecurityAnalysisSettings"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public async Task<global::GitHub.Models.EnterpriseSecurityAnalysisSettings?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
@@ -58,13 +59,14 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
             return await RequestAdapter.SendAsync<global::GitHub.Models.EnterpriseSecurityAnalysisSettings>(requestInfo, global::GitHub.Models.EnterpriseSecurityAnalysisSettings.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to update code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/code-security-and-analysis#update-code-security-and-analysis-features-for-an-enterprise" />
         /// </summary>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public async Task PatchAsync(global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisPatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
@@ -83,10 +85,11 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to fetch code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Gets code security and analysis settings for the specified enterprise.The authenticated user must be an administrator of the enterprise in order to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `read:enterprise` scope to use this endpoint.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public RequestInformation ToGetRequestInformation(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
@@ -102,11 +105,12 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
             return requestInfo;
         }
         /// <summary>
-        /// Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
+        /// &gt; [!WARNING]&gt; **Deprecation notice:** The ability to update code security and analysis settings for an enterprise is deprecated. Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead. For more information, see the [changelog](https://github.blog/changelog/2024-09-27-upcoming-replacement-of-enterprise-code-security-enablement-ui-and-apis).Updates the settings for advanced security, Dependabot alerts, secret scanning, and push protection for new repositories in an enterprise.The authenticated user must be an administrator of the enterprise to use this endpoint.OAuth app tokens and personal access tokens (classic) need the `admin:enterprise` scope to use this endpoint.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
+        [Obsolete("")]
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public RequestInformation ToPatchRequestInformation(global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisPatchRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
@@ -128,6 +132,7 @@ namespace GitHub.Enterprises.Item.Code_security_and_analysis
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
+        [Obsolete("")]
         public global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisRequestBuilder WithUrl(string rawUrl)
         {
             return new global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisRequestBuilder(rawUrl, RequestAdapter);

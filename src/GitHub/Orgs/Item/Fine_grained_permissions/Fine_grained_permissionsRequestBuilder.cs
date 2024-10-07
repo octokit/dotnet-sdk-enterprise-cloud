@@ -14,7 +14,7 @@ namespace GitHub.Orgs.Item.Fine_grained_permissions
     /// <summary>
     /// Builds and executes requests for operations under \orgs\{org}\fine_grained_permissions
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class Fine_grained_permissionsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

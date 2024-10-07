@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.AdvancedSecurity
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\settings\billing\advanced-security
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class AdvancedSecurityRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -83,7 +83,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.AdvancedSecurity
         /// <summary>
         /// Gets the GitHub Advanced Security active committers for an enterprise per repository.Each distinct user login across all repositories is counted as a single Advanced Security seat, so the `total_advanced_security_committers` is not the sum of active_users for each repository.The total number of repositories with committer information is tracked by the `total_count` field.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class AdvancedSecurityRequestBuilderGetQueryParameters 
         {
             /// <summary>The page number of the results to fetch. For more information, see &quot;[Using pagination in the REST API](https://docs.github.com/enterprise-cloud@latest//rest/using-the-rest-api/using-pagination-in-the-rest-api).&quot;</summary>

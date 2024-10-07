@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\settings\billing\usage
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class UsageRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -94,7 +94,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
         /// <summary>
         /// Gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class UsageRequestBuilderGetQueryParameters 
         {
             /// <summary>The ID corresponding to a cost center.</summary>

@@ -12,7 +12,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.CostCenters.Item
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\settings\billing\cost-centers\{cost_center_id}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithCost_center_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The resource property</summary>

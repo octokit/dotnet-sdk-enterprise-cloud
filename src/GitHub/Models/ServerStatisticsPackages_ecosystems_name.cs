@@ -4,7 +4,7 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>The name of the package ecosystem</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public enum ServerStatisticsPackages_ecosystems_name
     {
         [EnumMember(Value = "npm")]

@@ -12,12 +12,13 @@ namespace GitHub.Enterprises.Item.Item
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\{security_product}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class WithSecurity_productItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.enterprises.item.item.item collection</summary>
         /// <param name="position">The action to take.`enable_all` means to enable the specified security feature for all repositories in the enterprise.`disable_all` means to disable the specified security feature for all repositories in the enterprise.</param>
         /// <returns>A <see cref="global::GitHub.Enterprises.Item.Item.Item.WithEnablementItemRequestBuilder"/></returns>
+        [Obsolete("")]
         public global::GitHub.Enterprises.Item.Item.Item.WithEnablementItemRequestBuilder this[string position]
         {
             get

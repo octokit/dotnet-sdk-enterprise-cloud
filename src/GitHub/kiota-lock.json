@@ -1,9 +1,10 @@
 {
-  "descriptionHash": "0D21ECB2879C7C519B9EDA964AFED6E525716951EE2EE568962BA6342561456BBE0DC9E5BE11F6B42370F71630E11FCAED9A4F6EB342BB0A29C02D9E0403AAF0",
+  "descriptionHash": "8E75A9568025D2342D8E3EED133A8A20DAA06C7979A39C420CB0C607E9E357E71B605AC9F7C811E24985B6C4902845A6C94C831F79C3EB687B4BC744DDB5C5FF",
   "descriptionLocation": "../../../../../schemas/ghec.json",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.18.0",
+  "kiotaVersion": "1.19.0",
   "clientClassName": "GitHubClient",
+  "typeAccessModifier": "Public",
   "clientNamespaceName": "GitHub",
   "language": "CSharp",
   "usesBackingStore": false,

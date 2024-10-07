@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Actions.Runners.GenerateJitconfig
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\actions\runners\generate-jitconfig
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class GenerateJitconfigRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

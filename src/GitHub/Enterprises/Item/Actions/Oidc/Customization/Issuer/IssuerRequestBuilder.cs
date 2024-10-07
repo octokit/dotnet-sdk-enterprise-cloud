@@ -14,7 +14,7 @@ namespace GitHub.Enterprises.Item.Actions.Oidc.Customization.Issuer
     /// <summary>
     /// Builds and executes requests for operations under \enterprises\{enterprise}\actions\oidc\customization\issuer
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class IssuerRequestBuilder : BaseRequestBuilder
     {
         /// <summary>

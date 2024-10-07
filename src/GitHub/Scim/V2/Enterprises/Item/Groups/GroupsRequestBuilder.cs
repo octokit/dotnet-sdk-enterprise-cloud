@@ -15,7 +15,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
     /// <summary>
     /// Builds and executes requests for operations under \scim\v2\enterprises\{enterprise}\Groups
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class GroupsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the GitHub.scim.v2.enterprises.item.Groups.item collection</summary>
@@ -157,7 +157,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
         /// <summary>
         /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class GroupsRequestBuilderGetQueryParameters 
         {
             /// <summary>Used for pagination: the number of results to return per page.</summary>
