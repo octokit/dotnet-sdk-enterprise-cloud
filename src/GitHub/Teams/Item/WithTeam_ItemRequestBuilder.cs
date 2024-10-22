@@ -90,7 +90,7 @@ namespace GitHub.Teams.Item
         {
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#delete-a-team) endpoint.To delete a team, the authenticated user must be an organization owner or team maintainer.If you are an organization owner, deleting a parent team will delete all of its child teams as well.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#delete-a-team) endpoint.To delete a team, the authenticated user must be an organization owner or team maintainer.If you are an organization owner, deleting a parent team will delete all of its child teams as well.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#delete-a-team-legacy" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -116,7 +116,7 @@ namespace GitHub.Teams.Item
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#get-a-team-by-name) endpoint.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#get-a-team-by-name) endpoint.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#get-a-team-legacy" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.TeamFull"/></returns>
@@ -141,7 +141,7 @@ namespace GitHub.Teams.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.TeamFull>(requestInfo, global::GitHub.Models.TeamFull.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#update-a-team) endpoint.To edit a team, the authenticated user must either be an organization owner or a team maintainer.&gt; [!NOTE]&gt; With nested teams, the `privacy` for parent teams cannot be `secret`.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#update-a-team) endpoint.To edit a team, the authenticated user must either be an organization owner or a team maintainer.&gt; [!NOTE]&gt; With nested teams, the `privacy` for parent teams cannot be `secret`.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#update-a-team-legacy" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.TeamFull"/></returns>
@@ -172,7 +172,7 @@ namespace GitHub.Teams.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.TeamFull>(requestInfo, global::GitHub.Models.TeamFull.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#delete-a-team) endpoint.To delete a team, the authenticated user must be an organization owner or team maintainer.If you are an organization owner, deleting a parent team will delete all of its child teams as well.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the new [Delete a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#delete-a-team) endpoint.To delete a team, the authenticated user must be an organization owner or team maintainer.If you are an organization owner, deleting a parent team will delete all of its child teams as well.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -192,7 +192,7 @@ namespace GitHub.Teams.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#get-a-team-by-name) endpoint.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the [Get a team by name](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#get-a-team-by-name) endpoint.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -212,7 +212,7 @@ namespace GitHub.Teams.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!WARNING]&gt; **Deprecation notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#update-a-team) endpoint.To edit a team, the authenticated user must either be an organization owner or a team maintainer.&gt; [!NOTE]&gt; With nested teams, the `privacy` for parent teams cannot be `secret`.
+        /// &gt; [!WARNING]&gt; **Endpoint closing down notice:** This endpoint route is closing down and will be removed from the Teams API. We recommend migrating your existing code to use the new [Update a team](https://docs.github.com/enterprise-cloud@latest//rest/teams/teams#update-a-team) endpoint.To edit a team, the authenticated user must either be an organization owner or a team maintainer.&gt; [!NOTE]&gt; With nested teams, the `privacy` for parent teams cannot be `secret`.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
