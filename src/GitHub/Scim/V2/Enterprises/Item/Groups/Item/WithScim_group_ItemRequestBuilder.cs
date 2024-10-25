@@ -34,7 +34,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
         {
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public beta and subject to change.Deletes a SCIM group from an enterprise.
+        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public preview and subject to change.Deletes a SCIM group from an enterprise.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#delete-a-scim-group-from-an-enterprise" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -63,7 +63,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Gets information about a SCIM group.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#get-scim-provisioning-information-for-an-enterprise-group" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseGroupResponse"/></returns>
@@ -93,7 +93,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseGroupResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseGroupResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Update a provisioned group’s individual attributes.To modify a group&apos;s values, you&apos;ll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.&gt; [!NOTE]&gt; Memberships are referenced via a local user id. Ensure users are created before referencing them here.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned group’s individual attributes.To modify a group&apos;s values, you&apos;ll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.&gt; [!NOTE]&gt; Memberships are referenced via a local user id. Ensure users are created before referencing them here.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#update-an-attribute-for-a-scim-enterprise-group" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseGroupResponse"/></returns>
@@ -125,7 +125,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseGroupResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseGroupResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don&apos;t provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don&apos;t provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#set-scim-information-for-a-provisioned-enterprise-group" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseGroupResponse"/></returns>
@@ -157,7 +157,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseGroupResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseGroupResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public beta and subject to change.Deletes a SCIM group from an enterprise.
+        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public preview and subject to change.Deletes a SCIM group from an enterprise.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -176,7 +176,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Gets information about a SCIM group.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -195,7 +195,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Update a provisioned group’s individual attributes.To modify a group&apos;s values, you&apos;ll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.&gt; [!NOTE]&gt; Memberships are referenced via a local user id. Ensure users are created before referencing them here.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned group’s individual attributes.To modify a group&apos;s values, you&apos;ll need to use a specific Operations JSON format which must include at least one of the following operations: add, remove, or replace. For examples and more information on this SCIM format, consult the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2). The update function can also be used to add group memberships.You can submit group memberships individually or in batches for improved efficiency.&gt; [!NOTE]&gt; Memberships are referenced via a local user id. Ensure users are created before referencing them here.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -217,7 +217,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don&apos;t provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned group’s information.You must provide all the information required for the group as if you were provisioning it for the first time. Any existing group information that you don&apos;t provide will be removed, including group membership. If you want to only update a specific attribute, use the [Update an attribute for a SCIM enterprise group](#update-an-attribute-for-a-scim-enterprise-group) endpoint instead.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -248,7 +248,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups.Item
             return new global::GitHub.Scim.V2.Enterprises.Item.Groups.Item.WithScim_group_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public beta and subject to change.Gets information about a SCIM group.
+        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM group.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class WithScim_group_ItemRequestBuilderGetQueryParameters 
