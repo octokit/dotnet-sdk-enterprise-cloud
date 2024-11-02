@@ -21,6 +21,7 @@ using GitHub.Orgs.Item.ExternalGroups;
 using GitHub.Orgs.Item.Failed_invitations;
 using GitHub.Orgs.Item.Fine_grained_permissions;
 using GitHub.Orgs.Item.Hooks;
+using GitHub.Orgs.Item.Insights;
 using GitHub.Orgs.Item.Installation;
 using GitHub.Orgs.Item.Installations;
 using GitHub.Orgs.Item.InteractionLimits;
@@ -164,6 +165,11 @@ namespace GitHub.Orgs.Item
         public global::GitHub.Orgs.Item.Hooks.HooksRequestBuilder Hooks
         {
             get => new global::GitHub.Orgs.Item.Hooks.HooksRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The insights property</summary>
+        public global::GitHub.Orgs.Item.Insights.InsightsRequestBuilder Insights
+        {
+            get => new global::GitHub.Orgs.Item.Insights.InsightsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The installation property</summary>
         public global::GitHub.Orgs.Item.Installation.InstallationRequestBuilder Installation
