@@ -8,7 +8,7 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>
-    /// Prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
+    /// Prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.Removes non-compliant outside collaborators from the organization and its repositories.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class OrganizationFull : IAdditionalDataHolder, IParsable
