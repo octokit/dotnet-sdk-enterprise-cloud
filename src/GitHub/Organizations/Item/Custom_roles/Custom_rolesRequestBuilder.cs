@@ -11,7 +11,7 @@ using System;
 namespace GitHub.Organizations.Item.Custom_roles
 {
     /// <summary>
-    /// Builds and executes requests for operations under \organizations\{organization_id}\custom_roles
+    /// Builds and executes requests for operations under \organizations\{organization_-id}\custom_roles
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class Custom_rolesRequestBuilder : BaseRequestBuilder
@@ -21,7 +21,7 @@ namespace GitHub.Organizations.Item.Custom_roles
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public Custom_rolesRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/organizations/{organization_id}/custom_roles", pathParameters)
+        public Custom_rolesRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/organizations/{organization_%2Did}/custom_roles", pathParameters)
         {
         }
         /// <summary>
@@ -29,7 +29,7 @@ namespace GitHub.Organizations.Item.Custom_roles
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public Custom_rolesRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/organizations/{organization_id}/custom_roles", rawUrl)
+        public Custom_rolesRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/organizations/{organization_%2Did}/custom_roles", rawUrl)
         {
         }
         /// <summary>
