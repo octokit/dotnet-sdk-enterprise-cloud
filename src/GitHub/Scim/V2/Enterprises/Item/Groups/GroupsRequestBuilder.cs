@@ -47,7 +47,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
         {
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+        /// Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#list-provisioned-scim-groups-for-an-enterprise" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseGroupList"/></returns>
@@ -75,7 +75,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseGroupList>(requestInfo, global::GitHub.Models.ScimEnterpriseGroupList.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they&apos;re designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
+        /// Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they&apos;re designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#provision-a-scim-enterprise-group" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseGroupResponse"/></returns>
@@ -105,7 +105,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseGroupResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseGroupResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+        /// Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -124,7 +124,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they&apos;re designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
+        /// Creates a SCIM group for an enterprise.When members are part of the group provisioning payload, they&apos;re designated as external group members. Providers are responsible for maintaining a mapping between the `externalId` and `id` for each user.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -155,7 +155,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
             return new global::GitHub.Scim.V2.Enterprises.Item.Groups.GroupsRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
+        /// Lists provisioned SCIM groups in an enterprise.You can improve query search time by using the `excludedAttributes` query parameter with a value of `members` to exclude members from the response.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class GroupsRequestBuilderGetQueryParameters 
