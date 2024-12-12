@@ -10,6 +10,8 @@ using GitHub.Enterprises.Item.Copilot;
 using GitHub.Enterprises.Item.Dependabot;
 using GitHub.Enterprises.Item.Item;
 using GitHub.Enterprises.Item.LicenseSyncStatus;
+using GitHub.Enterprises.Item.Properties;
+using GitHub.Enterprises.Item.Rulesets;
 using GitHub.Enterprises.Item.SecretScanning;
 using GitHub.Enterprises.Item.Settings;
 using GitHub.Enterprises.Item.Team;
@@ -71,6 +73,16 @@ namespace GitHub.Enterprises.Item
         public global::GitHub.Enterprises.Item.LicenseSyncStatus.LicenseSyncStatusRequestBuilder LicenseSyncStatus
         {
             get => new global::GitHub.Enterprises.Item.LicenseSyncStatus.LicenseSyncStatusRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The properties property</summary>
+        public global::GitHub.Enterprises.Item.Properties.PropertiesRequestBuilder Properties
+        {
+            get => new global::GitHub.Enterprises.Item.Properties.PropertiesRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The rulesets property</summary>
+        public global::GitHub.Enterprises.Item.Rulesets.RulesetsRequestBuilder Rulesets
+        {
+            get => new global::GitHub.Enterprises.Item.Rulesets.RulesetsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The secretScanning property</summary>
         public global::GitHub.Enterprises.Item.SecretScanning.SecretScanningRequestBuilder SecretScanning

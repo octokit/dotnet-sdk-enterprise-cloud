@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 using System;
 namespace GitHub.Models
 {
-    /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page.</summary>
+    /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page. `evaluate` is not available for the `repository` target.</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public enum RepositoryRuleEnforcement
     {
