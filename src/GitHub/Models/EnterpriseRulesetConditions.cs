@@ -8,29 +8,29 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>
-    /// Conditions for an organization ruleset.The branch and tag rulesets conditions object should contain both `repository_name` and `ref_name` properties, or both `repository_id` and `ref_name` properties, or both `repository_property` and `ref_name` properties.The push rulesets conditions object does not require the `ref_name` property.For repository policy rulesets, the conditions object should only contain the `repository_name`, the `repository_id`, or the `repository_property`.
+    /// Conditions for an enterprise ruleset. The conditions object should contain either the `organization_id` or `organization_name` property and the `repository_name` or `repository_property` property. For branch and tag rulesets, the conditions object should also contain the `ref_name` property.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-    public partial class OrgRulesetConditions : IAdditionalDataHolder, IParsable
+    public partial class EnterpriseRulesetConditions : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::GitHub.Models.OrgRulesetConditions"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Models.EnterpriseRulesetConditions"/> and sets the default values.
         /// </summary>
-        public OrgRulesetConditions()
+        public EnterpriseRulesetConditions()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Models.OrgRulesetConditions"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.EnterpriseRulesetConditions"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::GitHub.Models.OrgRulesetConditions CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::GitHub.Models.EnterpriseRulesetConditions CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new global::GitHub.Models.OrgRulesetConditions();
+            return new global::GitHub.Models.EnterpriseRulesetConditions();
         }
         /// <summary>
         /// The deserialization information for the current model

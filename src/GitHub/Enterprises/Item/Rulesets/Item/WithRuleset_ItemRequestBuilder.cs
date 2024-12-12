@@ -9,38 +9,38 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-namespace GitHub.Orgs.Item.Properties.Schema.Item
+namespace GitHub.Enterprises.Item.Rulesets.Item
 {
     /// <summary>
-    /// Builds and executes requests for operations under \orgs\{org}\properties\schema\{custom_property_name}
+    /// Builds and executes requests for operations under \enterprises\{enterprise}\rulesets\{ruleset_id}
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-    public partial class WithCustom_property_nameItemRequestBuilder : BaseRequestBuilder
+    public partial class WithRuleset_ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_nameItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public WithCustom_property_nameItemRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/orgs/{org}/properties/schema/{custom_property_name}", pathParameters)
+        public WithRuleset_ItemRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/enterprises/{enterprise}/rulesets/{ruleset_id}", pathParameters)
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_nameItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public WithCustom_property_nameItemRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/orgs/{org}/properties/schema/{custom_property_name}", rawUrl)
+        public WithRuleset_ItemRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/enterprises/{enterprise}/rulesets/{ruleset_id}", rawUrl)
         {
         }
         /// <summary>
-        /// Removes a custom property that is defined for an organization.To use this endpoint, the authenticated user must be one of:  - An administrator for the organization.  - A user, or a user on a team, with the fine-grained permission of `custom_properties_org_definitions_manager` in the organization.
-        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/custom-properties#remove-a-custom-property-for-an-organization" />
+        /// Delete a ruleset for an enterprise.
+        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/rules#delete-an-enterprise-repository-ruleset" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
-        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 403 status code</exception>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 500 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public async Task DeleteAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
@@ -53,67 +53,67 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
             var requestInfo = ToDeleteRequestInformation(requestConfiguration);
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
-                { "403", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
                 { "404", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "500", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
             };
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Gets a custom property that is defined for an organization.Organization members can read these properties.
-        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/custom-properties#get-a-custom-property-for-an-organization" />
+        /// Get a repository ruleset for an enterprise.**Note:** To prevent leaking sensitive information, the `bypass_actors` property is only returned if the usermaking the API request has write access to the ruleset.
+        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/rules#get-an-enterprise-repository-ruleset" />
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Models.CustomProperty"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.RepositoryRuleset"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
-        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 403 status code</exception>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 500 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::GitHub.Models.CustomProperty?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RepositoryRuleset?> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::GitHub.Models.CustomProperty> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RepositoryRuleset> GetAsync(Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             var requestInfo = ToGetRequestInformation(requestConfiguration);
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
-                { "403", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
                 { "404", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "500", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<global::GitHub.Models.CustomProperty>(requestInfo, global::GitHub.Models.CustomProperty.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Models.RepositoryRuleset>(requestInfo, global::GitHub.Models.RepositoryRuleset.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Creates a new or updates an existing custom property that is defined for an organization.To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permission of `custom_properties_org_definitions_manager` in the organization.
-        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/orgs/custom-properties#create-or-update-a-custom-property-for-an-organization" />
+        /// Update a ruleset for an enterprise.
+        /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/rules#update-an-enterprise-repository-ruleset" />
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Models.CustomProperty"/></returns>
-        /// <param name="body">Custom property set payload</param>
+        /// <returns>A <see cref="global::GitHub.Models.RepositoryRuleset"/></returns>
+        /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
-        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 403 status code</exception>
         /// <exception cref="global::GitHub.Models.BasicError">When receiving a 404 status code</exception>
+        /// <exception cref="global::GitHub.Models.BasicError">When receiving a 500 status code</exception>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::GitHub.Models.CustomProperty?> PutAsync(global::GitHub.Models.CustomPropertySetPayload body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RepositoryRuleset?> PutAsync(global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::GitHub.Models.CustomProperty> PutAsync(global::GitHub.Models.CustomPropertySetPayload body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::GitHub.Models.RepositoryRuleset> PutAsync(global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
             var requestInfo = ToPutRequestInformation(body, requestConfiguration);
             var errorMapping = new Dictionary<string, ParsableFactory<IParsable>>
             {
-                { "403", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
                 { "404", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
+                { "500", global::GitHub.Models.BasicError.CreateFromDiscriminatorValue },
             };
-            return await RequestAdapter.SendAsync<global::GitHub.Models.CustomProperty>(requestInfo, global::GitHub.Models.CustomProperty.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
+            return await RequestAdapter.SendAsync<global::GitHub.Models.RepositoryRuleset>(requestInfo, global::GitHub.Models.RepositoryRuleset.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Removes a custom property that is defined for an organization.To use this endpoint, the authenticated user must be one of:  - An administrator for the organization.  - A user, or a user on a team, with the fine-grained permission of `custom_properties_org_definitions_manager` in the organization.
+        /// Delete a ruleset for an enterprise.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -132,7 +132,7 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
             return requestInfo;
         }
         /// <summary>
-        /// Gets a custom property that is defined for an organization.Organization members can read these properties.
+        /// Get a repository ruleset for an enterprise.**Note:** To prevent leaking sensitive information, the `bypass_actors` property is only returned if the usermaking the API request has write access to the ruleset.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -151,18 +151,18 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
             return requestInfo;
         }
         /// <summary>
-        /// Creates a new or updates an existing custom property that is defined for an organization.To use this endpoint, the authenticated user must be one of:- An administrator for the organization.- A user, or a user on a team, with the fine-grained permission of `custom_properties_org_definitions_manager` in the organization.
+        /// Update a ruleset for an enterprise.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
-        /// <param name="body">Custom property set payload</param>
+        /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPutRequestInformation(global::GitHub.Models.CustomPropertySetPayload body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPutRequestInformation(global::GitHub.Models.CustomPropertySetPayload body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPutRequestInformation(global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_PutRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
@@ -175,11 +175,11 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_nameItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
-        public global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_nameItemRequestBuilder WithUrl(string rawUrl)
+        public global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_ItemRequestBuilder WithUrl(string rawUrl)
         {
-            return new global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_nameItemRequestBuilder(rawUrl, RequestAdapter);
+            return new global::GitHub.Enterprises.Item.Rulesets.Item.WithRuleset_ItemRequestBuilder(rawUrl, RequestAdapter);
         }
     }
 }

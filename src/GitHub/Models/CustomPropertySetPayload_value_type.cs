@@ -3,25 +3,25 @@ using System.Runtime.Serialization;
 using System;
 namespace GitHub.Models
 {
-    /// <summary>The target of the ruleset</summary>
+    /// <summary>The type of the value for the property</summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-    public enum RepositoryRuleset_target
+    public enum CustomPropertySetPayload_value_type
     {
-        [EnumMember(Value = "branch")]
+        [EnumMember(Value = "string")]
         #pragma warning disable CS1591
-        Branch,
+        String,
         #pragma warning restore CS1591
-        [EnumMember(Value = "tag")]
+        [EnumMember(Value = "single_select")]
         #pragma warning disable CS1591
-        Tag,
+        Single_select,
         #pragma warning restore CS1591
-        [EnumMember(Value = "push")]
+        [EnumMember(Value = "multi_select")]
         #pragma warning disable CS1591
-        Push,
+        Multi_select,
         #pragma warning restore CS1591
-        [EnumMember(Value = "repository")]
+        [EnumMember(Value = "true_false")]
         #pragma warning disable CS1591
-        Repository,
+        True_false,
         #pragma warning restore CS1591
     }
 }

@@ -5,12 +5,13 @@ using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace GitHub.Orgs.Item.Properties.Schema.Item
+namespace GitHub.Models
 {
+    /// <summary>
+    /// Custom property set payload
+    /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-    #pragma warning disable CS1591
-    public partial class WithCustom_property_namePutRequestBody : IAdditionalDataHolder, IParsable
-    #pragma warning restore CS1591
+    public partial class CustomPropertySetPayload : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
@@ -25,10 +26,10 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
         /// <summary>Default value of the property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value? DefaultValue { get; set; }
+        public global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value? DefaultValue { get; set; }
 #nullable restore
 #else
-        public global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value DefaultValue { get; set; }
+        public global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value DefaultValue { get; set; }
 #endif
         /// <summary>Short description of the property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -41,23 +42,23 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
         /// <summary>Whether the property is required.</summary>
         public bool? Required { get; set; }
         /// <summary>The type of the value for the property</summary>
-        public global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody_value_type? ValueType { get; set; }
+        public global::GitHub.Models.CustomPropertySetPayload_value_type? ValueType { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Models.CustomPropertySetPayload"/> and sets the default values.
         /// </summary>
-        public WithCustom_property_namePutRequestBody()
+        public CustomPropertySetPayload()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.CustomPropertySetPayload"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::GitHub.Models.CustomPropertySetPayload CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody();
+            return new global::GitHub.Models.CustomPropertySetPayload();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -68,10 +69,10 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
             return new Dictionary<string, Action<IParseNode>>
             {
                 { "allowed_values", n => { AllowedValues = n.GetCollectionOfPrimitiveValues<string>()?.AsList(); } },
-                { "default_value", n => { DefaultValue = n.GetObjectValue<global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value>(global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value.CreateFromDiscriminatorValue); } },
+                { "default_value", n => { DefaultValue = n.GetObjectValue<global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value>(global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value.CreateFromDiscriminatorValue); } },
                 { "description", n => { Description = n.GetStringValue(); } },
                 { "required", n => { Required = n.GetBoolValue(); } },
-                { "value_type", n => { ValueType = n.GetEnumValue<global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody_value_type>(); } },
+                { "value_type", n => { ValueType = n.GetEnumValue<global::GitHub.Models.CustomPropertySetPayload_value_type>(); } },
             };
         }
         /// <summary>
@@ -82,18 +83,26 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
             writer.WriteCollectionOfPrimitiveValues<string>("allowed_values", AllowedValues);
-            writer.WriteObjectValue<global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value>("default_value", DefaultValue);
+            writer.WriteObjectValue<global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value>("default_value", DefaultValue);
             writer.WriteStringValue("description", Description);
             writer.WriteBoolValue("required", Required);
-            writer.WriteEnumValue<global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody_value_type>("value_type", ValueType);
+            writer.WriteEnumValue<global::GitHub.Models.CustomPropertySetPayload_value_type>("value_type", ValueType);
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
         /// Composed type wrapper for classes <see cref="string"/>, List&lt;string&gt;
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-        public partial class WithCustom_property_namePutRequestBody_default_value : IComposedTypeWrapper, IParsable
+        public partial class CustomPropertySetPayload_default_value : IComposedTypeWrapper, IParsable
         {
+            /// <summary>Composed type representation for type <see cref="string"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+            public string? CustomPropertySetPayloadDefaultValueString { get; set; }
+#nullable restore
+#else
+            public string CustomPropertySetPayloadDefaultValueString { get; set; }
+#endif
             /// <summary>Composed type representation for type List&lt;string&gt;</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -102,27 +111,19 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
 #else
             public List<string> String { get; set; }
 #endif
-            /// <summary>Composed type representation for type <see cref="string"/></summary>
-#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
-#nullable enable
-            public string? WithCustomPropertyNamePutRequestBodyDefaultValueString { get; set; }
-#nullable restore
-#else
-            public string WithCustomPropertyNamePutRequestBodyDefaultValueString { get; set; }
-#endif
             /// <summary>
             /// Creates a new instance of the appropriate class based on discriminator value
             /// </summary>
-            /// <returns>A <see cref="global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value"/></returns>
+            /// <returns>A <see cref="global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value"/></returns>
             /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-            public static global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value CreateFromDiscriminatorValue(IParseNode parseNode)
+            public static global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value CreateFromDiscriminatorValue(IParseNode parseNode)
             {
                 _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
                 var mappingValue = parseNode.GetChildNode("")?.GetStringValue();
-                var result = new global::GitHub.Orgs.Item.Properties.Schema.Item.WithCustom_property_namePutRequestBody.WithCustom_property_namePutRequestBody_default_value();
-                if(parseNode.GetStringValue() is string withCustomPropertyNamePutRequestBodyDefaultValueStringValue)
+                var result = new global::GitHub.Models.CustomPropertySetPayload.CustomPropertySetPayload_default_value();
+                if(parseNode.GetStringValue() is string customPropertySetPayloadDefaultValueStringValue)
                 {
-                    result.WithCustomPropertyNamePutRequestBodyDefaultValueString = withCustomPropertyNamePutRequestBodyDefaultValueStringValue;
+                    result.CustomPropertySetPayloadDefaultValueString = customPropertySetPayloadDefaultValueStringValue;
                 }
                 else if(parseNode.GetCollectionOfPrimitiveValues<string>()?.AsList() is List<string> stringValue)
                 {
@@ -145,9 +146,9 @@ namespace GitHub.Orgs.Item.Properties.Schema.Item
             public virtual void Serialize(ISerializationWriter writer)
             {
                 _ = writer ?? throw new ArgumentNullException(nameof(writer));
-                if(WithCustomPropertyNamePutRequestBodyDefaultValueString != null)
+                if(CustomPropertySetPayloadDefaultValueString != null)
                 {
-                    writer.WriteStringValue(null, WithCustomPropertyNamePutRequestBodyDefaultValueString);
+                    writer.WriteStringValue(null, CustomPropertySetPayloadDefaultValueString);
                 }
                 else if(String != null)
                 {
