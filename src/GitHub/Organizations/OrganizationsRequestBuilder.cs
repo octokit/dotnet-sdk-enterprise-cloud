@@ -20,14 +20,14 @@ namespace GitHub.Organizations
     {
         /// <summary>Gets an item from the GitHub.organizations.item collection</summary>
         /// <param name="position">The unique identifier of the organization.</param>
-        /// <returns>A <see cref="global::GitHub.Organizations.Item.WithOrganization_ItemRequestBuilder"/></returns>
-        public global::GitHub.Organizations.Item.WithOrganization_ItemRequestBuilder this[string position]
+        /// <returns>A <see cref="global::GitHub.Organizations.Item.Organization_ItemRequestBuilder"/></returns>
+        public global::GitHub.Organizations.Item.Organization_ItemRequestBuilder this[string position]
         {
             get
             {
                 var urlTplParams = new Dictionary<string, object>(PathParameters);
-                urlTplParams.Add("organization_id", position);
-                return new global::GitHub.Organizations.Item.WithOrganization_ItemRequestBuilder(urlTplParams, RequestAdapter);
+                urlTplParams.Add("organization_%2Did", position);
+                return new global::GitHub.Organizations.Item.Organization_ItemRequestBuilder(urlTplParams, RequestAdapter);
             }
         }
         /// <summary>

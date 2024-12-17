@@ -8,6 +8,7 @@ using GitHub.Repos.Item.Item.Attestations;
 using GitHub.Repos.Item.Item.Autolinks;
 using GitHub.Repos.Item.Item.AutomatedSecurityFixes;
 using GitHub.Repos.Item.Item.Branches;
+using GitHub.Repos.Item.Item.BypassRequests;
 using GitHub.Repos.Item.Item.CheckRuns;
 using GitHub.Repos.Item.Item.CheckSuites;
 using GitHub.Repos.Item.Item.CodeScanning;
@@ -119,6 +120,11 @@ namespace GitHub.Repos.Item.Item
         public global::GitHub.Repos.Item.Item.Branches.BranchesRequestBuilder Branches
         {
             get => new global::GitHub.Repos.Item.Item.Branches.BranchesRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The bypassRequests property</summary>
+        public global::GitHub.Repos.Item.Item.BypassRequests.BypassRequestsRequestBuilder BypassRequests
+        {
+            get => new global::GitHub.Repos.Item.Item.BypassRequests.BypassRequestsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The checkRuns property</summary>
         public global::GitHub.Repos.Item.Item.CheckRuns.CheckRunsRequestBuilder CheckRuns
