@@ -4,6 +4,7 @@ using GitHub.Enterprises.Item.Actions;
 using GitHub.Enterprises.Item.Announcement;
 using GitHub.Enterprises.Item.AuditLog;
 using GitHub.Enterprises.Item.CodeScanning;
+using GitHub.Enterprises.Item.CodeSecurity;
 using GitHub.Enterprises.Item.Code_security_and_analysis;
 using GitHub.Enterprises.Item.ConsumedLicenses;
 using GitHub.Enterprises.Item.Copilot;
@@ -53,6 +54,11 @@ namespace GitHub.Enterprises.Item
         public global::GitHub.Enterprises.Item.CodeScanning.CodeScanningRequestBuilder CodeScanning
         {
             get => new global::GitHub.Enterprises.Item.CodeScanning.CodeScanningRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The codeSecurity property</summary>
+        public global::GitHub.Enterprises.Item.CodeSecurity.CodeSecurityRequestBuilder CodeSecurity
+        {
+            get => new global::GitHub.Enterprises.Item.CodeSecurity.CodeSecurityRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The consumedLicenses property</summary>
         public global::GitHub.Enterprises.Item.ConsumedLicenses.ConsumedLicensesRequestBuilder ConsumedLicenses

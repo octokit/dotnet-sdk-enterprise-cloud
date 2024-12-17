@@ -6,6 +6,7 @@ using GitHub.Orgs.Item.Announcement;
 using GitHub.Orgs.Item.Attestations;
 using GitHub.Orgs.Item.AuditLog;
 using GitHub.Orgs.Item.Blocks;
+using GitHub.Orgs.Item.BypassRequests;
 using GitHub.Orgs.Item.CodeScanning;
 using GitHub.Orgs.Item.CodeSecurity;
 using GitHub.Orgs.Item.Codespaces;
@@ -90,6 +91,11 @@ namespace GitHub.Orgs.Item
         public global::GitHub.Orgs.Item.Blocks.BlocksRequestBuilder Blocks
         {
             get => new global::GitHub.Orgs.Item.Blocks.BlocksRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The bypassRequests property</summary>
+        public global::GitHub.Orgs.Item.BypassRequests.BypassRequestsRequestBuilder BypassRequests
+        {
+            get => new global::GitHub.Orgs.Item.BypassRequests.BypassRequestsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The codeScanning property</summary>
         public global::GitHub.Orgs.Item.CodeScanning.CodeScanningRequestBuilder CodeScanning
