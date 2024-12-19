@@ -158,6 +158,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleBranchNamePattern RepositoryRuleRepositoryRuleBranchNamePattern2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleBranchNamePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleBranchNamePattern? RepositoryRuleRepositoryRuleBranchNamePattern3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleBranchNamePattern RepositoryRuleRepositoryRuleBranchNamePattern3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleBranchNamePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleBranchNamePattern? RepositoryRuleRepositoryRuleBranchNamePattern4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleBranchNamePattern RepositoryRuleRepositoryRuleBranchNamePattern4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCodeScanning"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -189,6 +205,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleCodeScanning RepositoryRuleRepositoryRuleCodeScanning2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCodeScanning"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCodeScanning? RepositoryRuleRepositoryRuleCodeScanning3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCodeScanning RepositoryRuleRepositoryRuleCodeScanning3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCodeScanning"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCodeScanning? RepositoryRuleRepositoryRuleCodeScanning4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCodeScanning RepositoryRuleRepositoryRuleCodeScanning4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -222,6 +254,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern RepositoryRuleRepositoryRuleCommitAuthorEmailPattern2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern? RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern? RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitMessagePattern"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -253,6 +301,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleCommitMessagePattern RepositoryRuleRepositoryRuleCommitMessagePattern2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitMessagePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitMessagePattern? RepositoryRuleRepositoryRuleCommitMessagePattern3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitMessagePattern RepositoryRuleRepositoryRuleCommitMessagePattern3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitMessagePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitMessagePattern? RepositoryRuleRepositoryRuleCommitMessagePattern4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitMessagePattern RepositoryRuleRepositoryRuleCommitMessagePattern4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitterEmailPattern"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -286,6 +350,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleCommitterEmailPattern RepositoryRuleRepositoryRuleCommitterEmailPattern2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitterEmailPattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitterEmailPattern? RepositoryRuleRepositoryRuleCommitterEmailPattern3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitterEmailPattern RepositoryRuleRepositoryRuleCommitterEmailPattern3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCommitterEmailPattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCommitterEmailPattern? RepositoryRuleRepositoryRuleCommitterEmailPattern4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCommitterEmailPattern RepositoryRuleRepositoryRuleCommitterEmailPattern4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCreation"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -317,6 +397,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleCreation RepositoryRuleRepositoryRuleCreation2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCreation"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCreation? RepositoryRuleRepositoryRuleCreation3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCreation RepositoryRuleRepositoryRuleCreation3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleCreation"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleCreation? RepositoryRuleRepositoryRuleCreation4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleCreation RepositoryRuleRepositoryRuleCreation4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleDeletion"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -350,6 +446,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleDeletion RepositoryRuleRepositoryRuleDeletion2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleDeletion"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleDeletion? RepositoryRuleRepositoryRuleDeletion3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleDeletion RepositoryRuleRepositoryRuleDeletion3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleDeletion"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleDeletion? RepositoryRuleRepositoryRuleDeletion4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleDeletion RepositoryRuleRepositoryRuleDeletion4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember1"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -381,6 +493,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleMember1 RepositoryRuleRepositoryRuleMember12 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember1"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember1? RepositoryRuleRepositoryRuleMember13 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember1 RepositoryRuleRepositoryRuleMember13 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember1"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember1? RepositoryRuleRepositoryRuleMember14 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember1 RepositoryRuleRepositoryRuleMember14 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember2"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -414,6 +542,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleMember2 RepositoryRuleRepositoryRuleMember22 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember2"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember2? RepositoryRuleRepositoryRuleMember23 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember2 RepositoryRuleRepositoryRuleMember23 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember2"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember2? RepositoryRuleRepositoryRuleMember24 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember2 RepositoryRuleRepositoryRuleMember24 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember3"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -445,6 +589,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleMember3 RepositoryRuleRepositoryRuleMember32 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember3"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember3? RepositoryRuleRepositoryRuleMember33 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember3 RepositoryRuleRepositoryRuleMember33 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember3"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember3? RepositoryRuleRepositoryRuleMember34 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember3 RepositoryRuleRepositoryRuleMember34 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember4"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -478,6 +638,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleMember4 RepositoryRuleRepositoryRuleMember42 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember4"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember4? RepositoryRuleRepositoryRuleMember43 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember4 RepositoryRuleRepositoryRuleMember43 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMember4"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMember4? RepositoryRuleRepositoryRuleMember44 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMember4 RepositoryRuleRepositoryRuleMember44 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMergeQueue"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -509,6 +685,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleMergeQueue RepositoryRuleRepositoryRuleMergeQueue2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMergeQueue"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMergeQueue? RepositoryRuleRepositoryRuleMergeQueue3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMergeQueue RepositoryRuleRepositoryRuleMergeQueue3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleMergeQueue"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleMergeQueue? RepositoryRuleRepositoryRuleMergeQueue4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleMergeQueue RepositoryRuleRepositoryRuleMergeQueue4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleNonFastForward"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -542,6 +734,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleNonFastForward RepositoryRuleRepositoryRuleNonFastForward2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleNonFastForward"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleNonFastForward? RepositoryRuleRepositoryRuleNonFastForward3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleNonFastForward RepositoryRuleRepositoryRuleNonFastForward3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleNonFastForward"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleNonFastForward? RepositoryRuleRepositoryRuleNonFastForward4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleNonFastForward RepositoryRuleRepositoryRuleNonFastForward4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRulePullRequest"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -573,6 +781,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRulePullRequest RepositoryRuleRepositoryRulePullRequest2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRulePullRequest"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRulePullRequest? RepositoryRuleRepositoryRulePullRequest3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRulePullRequest RepositoryRuleRepositoryRulePullRequest3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRulePullRequest"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRulePullRequest? RepositoryRuleRepositoryRulePullRequest4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRulePullRequest RepositoryRuleRepositoryRulePullRequest4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredDeployments"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -606,6 +830,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleRequiredDeployments RepositoryRuleRepositoryRuleRequiredDeployments2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredDeployments"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredDeployments? RepositoryRuleRepositoryRuleRequiredDeployments3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredDeployments RepositoryRuleRepositoryRuleRequiredDeployments3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredDeployments"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredDeployments? RepositoryRuleRepositoryRuleRequiredDeployments4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredDeployments RepositoryRuleRepositoryRuleRequiredDeployments4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredLinearHistory"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -637,6 +877,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleRequiredLinearHistory RepositoryRuleRepositoryRuleRequiredLinearHistory2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredLinearHistory"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredLinearHistory? RepositoryRuleRepositoryRuleRequiredLinearHistory3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredLinearHistory RepositoryRuleRepositoryRuleRequiredLinearHistory3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredLinearHistory"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredLinearHistory? RepositoryRuleRepositoryRuleRequiredLinearHistory4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredLinearHistory RepositoryRuleRepositoryRuleRequiredLinearHistory4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredSignatures"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -670,6 +926,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleRequiredSignatures RepositoryRuleRepositoryRuleRequiredSignatures2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredSignatures"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredSignatures? RepositoryRuleRepositoryRuleRequiredSignatures3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredSignatures RepositoryRuleRepositoryRuleRequiredSignatures3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredSignatures"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredSignatures? RepositoryRuleRepositoryRuleRequiredSignatures4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredSignatures RepositoryRuleRepositoryRuleRequiredSignatures4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredStatusChecks"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -701,6 +973,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleRequiredStatusChecks RepositoryRuleRepositoryRuleRequiredStatusChecks2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredStatusChecks"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredStatusChecks? RepositoryRuleRepositoryRuleRequiredStatusChecks3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredStatusChecks RepositoryRuleRepositoryRuleRequiredStatusChecks3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredStatusChecks"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleRequiredStatusChecks? RepositoryRuleRepositoryRuleRequiredStatusChecks4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleRequiredStatusChecks RepositoryRuleRepositoryRuleRequiredStatusChecks4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleTagNamePattern"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -734,6 +1022,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleTagNamePattern RepositoryRuleRepositoryRuleTagNamePattern2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleTagNamePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleTagNamePattern? RepositoryRuleRepositoryRuleTagNamePattern3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleTagNamePattern RepositoryRuleRepositoryRuleTagNamePattern3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleTagNamePattern"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleTagNamePattern? RepositoryRuleRepositoryRuleTagNamePattern4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleTagNamePattern RepositoryRuleRepositoryRuleTagNamePattern4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleUpdate"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -766,6 +1070,22 @@ namespace GitHub.Models
 #else
         public global::GitHub.Models.RepositoryRuleUpdate RepositoryRuleRepositoryRuleUpdate2 { get; set; }
 #endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleUpdate"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleUpdate? RepositoryRuleRepositoryRuleUpdate3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleUpdate RepositoryRuleRepositoryRuleUpdate3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleUpdate"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleUpdate? RepositoryRuleRepositoryRuleUpdate4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleUpdate RepositoryRuleRepositoryRuleUpdate4 { get; set; }
+#endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleWorkflows"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -797,6 +1117,22 @@ namespace GitHub.Models
 #nullable restore
 #else
         public global::GitHub.Models.RepositoryRuleWorkflows RepositoryRuleRepositoryRuleWorkflows2 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleWorkflows"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleWorkflows? RepositoryRuleRepositoryRuleWorkflows3 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleWorkflows RepositoryRuleRepositoryRuleWorkflows3 { get; set; }
+#endif
+        /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleWorkflows"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public global::GitHub.Models.RepositoryRuleWorkflows? RepositoryRuleRepositoryRuleWorkflows4 { get; set; }
+#nullable restore
+#else
+        public global::GitHub.Models.RepositoryRuleWorkflows RepositoryRuleRepositoryRuleWorkflows4 { get; set; }
 #endif
         /// <summary>Composed type representation for type <see cref="global::GitHub.Models.RepositoryRuleRequiredDeployments"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -936,6 +1272,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleBranchNamePattern2 = new global::GitHub.Models.RepositoryRuleBranchNamePattern();
             }
+            else if("repository-rule-branch-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleBranchNamePattern3 = new global::GitHub.Models.RepositoryRuleBranchNamePattern();
+            }
+            else if("repository-rule-branch-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleBranchNamePattern4 = new global::GitHub.Models.RepositoryRuleBranchNamePattern();
+            }
             else if("repository-rule-code-scanning".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleCodeScanning = new global::GitHub.Models.RepositoryRuleCodeScanning();
@@ -951,6 +1295,14 @@ namespace GitHub.Models
             else if("repository-rule-code-scanning".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleCodeScanning2 = new global::GitHub.Models.RepositoryRuleCodeScanning();
+            }
+            else if("repository-rule-code-scanning".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCodeScanning3 = new global::GitHub.Models.RepositoryRuleCodeScanning();
+            }
+            else if("repository-rule-code-scanning".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCodeScanning4 = new global::GitHub.Models.RepositoryRuleCodeScanning();
             }
             else if("repository-rule-commit-author-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -968,6 +1320,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleCommitAuthorEmailPattern2 = new global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern();
             }
+            else if("repository-rule-commit-author-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 = new global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern();
+            }
+            else if("repository-rule-commit-author-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 = new global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern();
+            }
             else if("repository-rule-commit-message-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleCommitMessagePattern = new global::GitHub.Models.RepositoryRuleCommitMessagePattern();
@@ -983,6 +1343,14 @@ namespace GitHub.Models
             else if("repository-rule-commit-message-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleCommitMessagePattern2 = new global::GitHub.Models.RepositoryRuleCommitMessagePattern();
+            }
+            else if("repository-rule-commit-message-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitMessagePattern3 = new global::GitHub.Models.RepositoryRuleCommitMessagePattern();
+            }
+            else if("repository-rule-commit-message-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitMessagePattern4 = new global::GitHub.Models.RepositoryRuleCommitMessagePattern();
             }
             else if("repository-rule-committer-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1000,6 +1368,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleCommitterEmailPattern2 = new global::GitHub.Models.RepositoryRuleCommitterEmailPattern();
             }
+            else if("repository-rule-committer-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitterEmailPattern3 = new global::GitHub.Models.RepositoryRuleCommitterEmailPattern();
+            }
+            else if("repository-rule-committer-email-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCommitterEmailPattern4 = new global::GitHub.Models.RepositoryRuleCommitterEmailPattern();
+            }
             else if("repository-rule-creation".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleCreation = new global::GitHub.Models.RepositoryRuleCreation();
@@ -1016,6 +1392,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleCreation2 = new global::GitHub.Models.RepositoryRuleCreation();
             }
+            else if("repository-rule-creation".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCreation3 = new global::GitHub.Models.RepositoryRuleCreation();
+            }
+            else if("repository-rule-creation".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleCreation4 = new global::GitHub.Models.RepositoryRuleCreation();
+            }
             else if("repository-rule-deletion".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleDeletion = new global::GitHub.Models.RepositoryRuleDeletion();
@@ -1031,6 +1415,14 @@ namespace GitHub.Models
             else if("repository-rule-deletion".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleDeletion2 = new global::GitHub.Models.RepositoryRuleDeletion();
+            }
+            else if("repository-rule-deletion".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleDeletion3 = new global::GitHub.Models.RepositoryRuleDeletion();
+            }
+            else if("repository-rule-deletion".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleDeletion4 = new global::GitHub.Models.RepositoryRuleDeletion();
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1050,6 +1442,14 @@ namespace GitHub.Models
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
+                result.RepositoryRuleRepositoryRuleMember13 = new global::GitHub.Models.RepositoryRuleMember1();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember14 = new global::GitHub.Models.RepositoryRuleMember1();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
                 result.RepositoryRuleRepositoryRuleMember2 = new global::GitHub.Models.RepositoryRuleMember2();
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
@@ -1063,6 +1463,14 @@ namespace GitHub.Models
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleMember22 = new global::GitHub.Models.RepositoryRuleMember2();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember23 = new global::GitHub.Models.RepositoryRuleMember2();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember24 = new global::GitHub.Models.RepositoryRuleMember2();
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1082,6 +1490,14 @@ namespace GitHub.Models
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
+                result.RepositoryRuleRepositoryRuleMember33 = new global::GitHub.Models.RepositoryRuleMember3();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember34 = new global::GitHub.Models.RepositoryRuleMember3();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
                 result.RepositoryRuleRepositoryRuleMember4 = new global::GitHub.Models.RepositoryRuleMember4();
             }
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
@@ -1095,6 +1511,14 @@ namespace GitHub.Models
             else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleMember42 = new global::GitHub.Models.RepositoryRuleMember4();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember43 = new global::GitHub.Models.RepositoryRuleMember4();
+            }
+            else if("".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMember44 = new global::GitHub.Models.RepositoryRuleMember4();
             }
             else if("repository-rule-merge-queue".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1112,6 +1536,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleMergeQueue2 = new global::GitHub.Models.RepositoryRuleMergeQueue();
             }
+            else if("repository-rule-merge-queue".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMergeQueue3 = new global::GitHub.Models.RepositoryRuleMergeQueue();
+            }
+            else if("repository-rule-merge-queue".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleMergeQueue4 = new global::GitHub.Models.RepositoryRuleMergeQueue();
+            }
             else if("repository-rule-non-fast-forward".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleNonFastForward = new global::GitHub.Models.RepositoryRuleNonFastForward();
@@ -1127,6 +1559,14 @@ namespace GitHub.Models
             else if("repository-rule-non-fast-forward".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleNonFastForward2 = new global::GitHub.Models.RepositoryRuleNonFastForward();
+            }
+            else if("repository-rule-non-fast-forward".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleNonFastForward3 = new global::GitHub.Models.RepositoryRuleNonFastForward();
+            }
+            else if("repository-rule-non-fast-forward".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleNonFastForward4 = new global::GitHub.Models.RepositoryRuleNonFastForward();
             }
             else if("repository-rule-pull-request".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1144,6 +1584,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRulePullRequest2 = new global::GitHub.Models.RepositoryRulePullRequest();
             }
+            else if("repository-rule-pull-request".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRulePullRequest3 = new global::GitHub.Models.RepositoryRulePullRequest();
+            }
+            else if("repository-rule-pull-request".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRulePullRequest4 = new global::GitHub.Models.RepositoryRulePullRequest();
+            }
             else if("repository-rule-required-deployments".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleRequiredDeployments = new global::GitHub.Models.RepositoryRuleRequiredDeployments();
@@ -1159,6 +1607,14 @@ namespace GitHub.Models
             else if("repository-rule-required-deployments".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleRequiredDeployments2 = new global::GitHub.Models.RepositoryRuleRequiredDeployments();
+            }
+            else if("repository-rule-required-deployments".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredDeployments3 = new global::GitHub.Models.RepositoryRuleRequiredDeployments();
+            }
+            else if("repository-rule-required-deployments".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredDeployments4 = new global::GitHub.Models.RepositoryRuleRequiredDeployments();
             }
             else if("repository-rule-required-linear-history".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1176,6 +1632,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleRequiredLinearHistory2 = new global::GitHub.Models.RepositoryRuleRequiredLinearHistory();
             }
+            else if("repository-rule-required-linear-history".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredLinearHistory3 = new global::GitHub.Models.RepositoryRuleRequiredLinearHistory();
+            }
+            else if("repository-rule-required-linear-history".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredLinearHistory4 = new global::GitHub.Models.RepositoryRuleRequiredLinearHistory();
+            }
             else if("repository-rule-required-signatures".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleRequiredSignatures = new global::GitHub.Models.RepositoryRuleRequiredSignatures();
@@ -1191,6 +1655,14 @@ namespace GitHub.Models
             else if("repository-rule-required-signatures".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleRequiredSignatures2 = new global::GitHub.Models.RepositoryRuleRequiredSignatures();
+            }
+            else if("repository-rule-required-signatures".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredSignatures3 = new global::GitHub.Models.RepositoryRuleRequiredSignatures();
+            }
+            else if("repository-rule-required-signatures".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredSignatures4 = new global::GitHub.Models.RepositoryRuleRequiredSignatures();
             }
             else if("repository-rule-required-status-checks".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1208,6 +1680,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleRequiredStatusChecks2 = new global::GitHub.Models.RepositoryRuleRequiredStatusChecks();
             }
+            else if("repository-rule-required-status-checks".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredStatusChecks3 = new global::GitHub.Models.RepositoryRuleRequiredStatusChecks();
+            }
+            else if("repository-rule-required-status-checks".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleRequiredStatusChecks4 = new global::GitHub.Models.RepositoryRuleRequiredStatusChecks();
+            }
             else if("repository-rule-tag-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleTagNamePattern = new global::GitHub.Models.RepositoryRuleTagNamePattern();
@@ -1223,6 +1703,14 @@ namespace GitHub.Models
             else if("repository-rule-tag-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleTagNamePattern2 = new global::GitHub.Models.RepositoryRuleTagNamePattern();
+            }
+            else if("repository-rule-tag-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleTagNamePattern3 = new global::GitHub.Models.RepositoryRuleTagNamePattern();
+            }
+            else if("repository-rule-tag-name-pattern".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleTagNamePattern4 = new global::GitHub.Models.RepositoryRuleTagNamePattern();
             }
             else if("repository-rule-update".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1240,6 +1728,14 @@ namespace GitHub.Models
             {
                 result.RepositoryRuleRepositoryRuleUpdate2 = new global::GitHub.Models.RepositoryRuleUpdate();
             }
+            else if("repository-rule-update".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleUpdate3 = new global::GitHub.Models.RepositoryRuleUpdate();
+            }
+            else if("repository-rule-update".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleUpdate4 = new global::GitHub.Models.RepositoryRuleUpdate();
+            }
             else if("repository-rule-workflows".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleWorkflows = new global::GitHub.Models.RepositoryRuleWorkflows();
@@ -1255,6 +1751,14 @@ namespace GitHub.Models
             else if("repository-rule-workflows".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
                 result.RepositoryRuleRepositoryRuleWorkflows2 = new global::GitHub.Models.RepositoryRuleWorkflows();
+            }
+            else if("repository-rule-workflows".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleWorkflows3 = new global::GitHub.Models.RepositoryRuleWorkflows();
+            }
+            else if("repository-rule-workflows".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+            {
+                result.RepositoryRuleRepositoryRuleWorkflows4 = new global::GitHub.Models.RepositoryRuleWorkflows();
             }
             else if("repository-rule-required-deployments".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
             {
@@ -1364,6 +1868,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleBranchNamePattern2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleBranchNamePattern3 != null)
+            {
+                return RepositoryRuleRepositoryRuleBranchNamePattern3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleBranchNamePattern4 != null)
+            {
+                return RepositoryRuleRepositoryRuleBranchNamePattern4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleCodeScanning != null)
             {
                 return RepositoryRuleRepositoryRuleCodeScanning.GetFieldDeserializers();
@@ -1379,6 +1891,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCodeScanning2 != null)
             {
                 return RepositoryRuleRepositoryRuleCodeScanning2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCodeScanning3 != null)
+            {
+                return RepositoryRuleRepositoryRuleCodeScanning3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCodeScanning4 != null)
+            {
+                return RepositoryRuleRepositoryRuleCodeScanning4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern != null)
             {
@@ -1396,6 +1916,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleCommitAuthorEmailPattern2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleCommitMessagePattern != null)
             {
                 return RepositoryRuleRepositoryRuleCommitMessagePattern.GetFieldDeserializers();
@@ -1411,6 +1939,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCommitMessagePattern2 != null)
             {
                 return RepositoryRuleRepositoryRuleCommitMessagePattern2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCommitMessagePattern3 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitMessagePattern3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCommitMessagePattern4 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitMessagePattern4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleCommitterEmailPattern != null)
             {
@@ -1428,6 +1964,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleCommitterEmailPattern2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleCommitterEmailPattern3 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitterEmailPattern3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCommitterEmailPattern4 != null)
+            {
+                return RepositoryRuleRepositoryRuleCommitterEmailPattern4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleCreation != null)
             {
                 return RepositoryRuleRepositoryRuleCreation.GetFieldDeserializers();
@@ -1443,6 +1987,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCreation2 != null)
             {
                 return RepositoryRuleRepositoryRuleCreation2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCreation3 != null)
+            {
+                return RepositoryRuleRepositoryRuleCreation3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleCreation4 != null)
+            {
+                return RepositoryRuleRepositoryRuleCreation4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleDeletion != null)
             {
@@ -1460,6 +2012,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleDeletion2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleDeletion3 != null)
+            {
+                return RepositoryRuleRepositoryRuleDeletion3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleDeletion4 != null)
+            {
+                return RepositoryRuleRepositoryRuleDeletion4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleMember1 != null)
             {
                 return RepositoryRuleRepositoryRuleMember1.GetFieldDeserializers();
@@ -1475,6 +2035,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMember12 != null)
             {
                 return RepositoryRuleRepositoryRuleMember12.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember13 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember13.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember14 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember14.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleMember2 != null)
             {
@@ -1492,6 +2060,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleMember22.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleMember23 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember23.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember24 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember24.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleMember3 != null)
             {
                 return RepositoryRuleRepositoryRuleMember3.GetFieldDeserializers();
@@ -1507,6 +2083,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMember32 != null)
             {
                 return RepositoryRuleRepositoryRuleMember32.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember33 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember33.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember34 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember34.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleMember4 != null)
             {
@@ -1524,6 +2108,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleMember42.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleMember43 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember43.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMember44 != null)
+            {
+                return RepositoryRuleRepositoryRuleMember44.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleMergeQueue != null)
             {
                 return RepositoryRuleRepositoryRuleMergeQueue.GetFieldDeserializers();
@@ -1539,6 +2131,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMergeQueue2 != null)
             {
                 return RepositoryRuleRepositoryRuleMergeQueue2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMergeQueue3 != null)
+            {
+                return RepositoryRuleRepositoryRuleMergeQueue3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleMergeQueue4 != null)
+            {
+                return RepositoryRuleRepositoryRuleMergeQueue4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleNonFastForward != null)
             {
@@ -1556,6 +2156,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleNonFastForward2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleNonFastForward3 != null)
+            {
+                return RepositoryRuleRepositoryRuleNonFastForward3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleNonFastForward4 != null)
+            {
+                return RepositoryRuleRepositoryRuleNonFastForward4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRulePullRequest != null)
             {
                 return RepositoryRuleRepositoryRulePullRequest.GetFieldDeserializers();
@@ -1571,6 +2179,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRulePullRequest2 != null)
             {
                 return RepositoryRuleRepositoryRulePullRequest2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRulePullRequest3 != null)
+            {
+                return RepositoryRuleRepositoryRulePullRequest3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRulePullRequest4 != null)
+            {
+                return RepositoryRuleRepositoryRulePullRequest4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleRequiredDeployments != null)
             {
@@ -1588,6 +2204,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleRequiredDeployments2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleRequiredDeployments3 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredDeployments3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredDeployments4 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredDeployments4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleRequiredLinearHistory != null)
             {
                 return RepositoryRuleRepositoryRuleRequiredLinearHistory.GetFieldDeserializers();
@@ -1603,6 +2227,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleRequiredLinearHistory2 != null)
             {
                 return RepositoryRuleRepositoryRuleRequiredLinearHistory2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredLinearHistory3 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredLinearHistory3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredLinearHistory4 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredLinearHistory4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleRequiredSignatures != null)
             {
@@ -1620,6 +2252,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleRequiredSignatures2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleRequiredSignatures3 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredSignatures3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredSignatures4 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredSignatures4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleRequiredStatusChecks != null)
             {
                 return RepositoryRuleRepositoryRuleRequiredStatusChecks.GetFieldDeserializers();
@@ -1635,6 +2275,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleRequiredStatusChecks2 != null)
             {
                 return RepositoryRuleRepositoryRuleRequiredStatusChecks2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredStatusChecks3 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredStatusChecks3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredStatusChecks4 != null)
+            {
+                return RepositoryRuleRepositoryRuleRequiredStatusChecks4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRepositoryRuleTagNamePattern != null)
             {
@@ -1652,6 +2300,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleTagNamePattern2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleTagNamePattern3 != null)
+            {
+                return RepositoryRuleRepositoryRuleTagNamePattern3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleTagNamePattern4 != null)
+            {
+                return RepositoryRuleRepositoryRuleTagNamePattern4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleUpdate != null)
             {
                 return RepositoryRuleRepositoryRuleUpdate.GetFieldDeserializers();
@@ -1668,6 +2324,14 @@ namespace GitHub.Models
             {
                 return RepositoryRuleRepositoryRuleUpdate2.GetFieldDeserializers();
             }
+            else if(RepositoryRuleRepositoryRuleUpdate3 != null)
+            {
+                return RepositoryRuleRepositoryRuleUpdate3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleUpdate4 != null)
+            {
+                return RepositoryRuleRepositoryRuleUpdate4.GetFieldDeserializers();
+            }
             else if(RepositoryRuleRepositoryRuleWorkflows != null)
             {
                 return RepositoryRuleRepositoryRuleWorkflows.GetFieldDeserializers();
@@ -1683,6 +2347,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleWorkflows2 != null)
             {
                 return RepositoryRuleRepositoryRuleWorkflows2.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleWorkflows3 != null)
+            {
+                return RepositoryRuleRepositoryRuleWorkflows3.GetFieldDeserializers();
+            }
+            else if(RepositoryRuleRepositoryRuleWorkflows4 != null)
+            {
+                return RepositoryRuleRepositoryRuleWorkflows4.GetFieldDeserializers();
             }
             else if(RepositoryRuleRequiredDeployments != null)
             {
@@ -1793,6 +2465,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleBranchNamePattern>(null, RepositoryRuleRepositoryRuleBranchNamePattern2);
             }
+            else if(RepositoryRuleRepositoryRuleBranchNamePattern3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleBranchNamePattern>(null, RepositoryRuleRepositoryRuleBranchNamePattern3);
+            }
+            else if(RepositoryRuleRepositoryRuleBranchNamePattern4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleBranchNamePattern>(null, RepositoryRuleRepositoryRuleBranchNamePattern4);
+            }
             else if(RepositoryRuleRepositoryRuleCodeScanning != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCodeScanning>(null, RepositoryRuleRepositoryRuleCodeScanning);
@@ -1808,6 +2488,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCodeScanning2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCodeScanning>(null, RepositoryRuleRepositoryRuleCodeScanning2);
+            }
+            else if(RepositoryRuleRepositoryRuleCodeScanning3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCodeScanning>(null, RepositoryRuleRepositoryRuleCodeScanning3);
+            }
+            else if(RepositoryRuleRepositoryRuleCodeScanning4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCodeScanning>(null, RepositoryRuleRepositoryRuleCodeScanning4);
             }
             else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern != null)
             {
@@ -1825,6 +2513,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern>(null, RepositoryRuleRepositoryRuleCommitAuthorEmailPattern2);
             }
+            else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern>(null, RepositoryRuleRepositoryRuleCommitAuthorEmailPattern3);
+            }
+            else if(RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitAuthorEmailPattern>(null, RepositoryRuleRepositoryRuleCommitAuthorEmailPattern4);
+            }
             else if(RepositoryRuleRepositoryRuleCommitMessagePattern != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitMessagePattern>(null, RepositoryRuleRepositoryRuleCommitMessagePattern);
@@ -1840,6 +2536,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCommitMessagePattern2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitMessagePattern>(null, RepositoryRuleRepositoryRuleCommitMessagePattern2);
+            }
+            else if(RepositoryRuleRepositoryRuleCommitMessagePattern3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitMessagePattern>(null, RepositoryRuleRepositoryRuleCommitMessagePattern3);
+            }
+            else if(RepositoryRuleRepositoryRuleCommitMessagePattern4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitMessagePattern>(null, RepositoryRuleRepositoryRuleCommitMessagePattern4);
             }
             else if(RepositoryRuleRepositoryRuleCommitterEmailPattern != null)
             {
@@ -1857,6 +2561,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitterEmailPattern>(null, RepositoryRuleRepositoryRuleCommitterEmailPattern2);
             }
+            else if(RepositoryRuleRepositoryRuleCommitterEmailPattern3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitterEmailPattern>(null, RepositoryRuleRepositoryRuleCommitterEmailPattern3);
+            }
+            else if(RepositoryRuleRepositoryRuleCommitterEmailPattern4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCommitterEmailPattern>(null, RepositoryRuleRepositoryRuleCommitterEmailPattern4);
+            }
             else if(RepositoryRuleRepositoryRuleCreation != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCreation>(null, RepositoryRuleRepositoryRuleCreation);
@@ -1872,6 +2584,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleCreation2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCreation>(null, RepositoryRuleRepositoryRuleCreation2);
+            }
+            else if(RepositoryRuleRepositoryRuleCreation3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCreation>(null, RepositoryRuleRepositoryRuleCreation3);
+            }
+            else if(RepositoryRuleRepositoryRuleCreation4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleCreation>(null, RepositoryRuleRepositoryRuleCreation4);
             }
             else if(RepositoryRuleRepositoryRuleDeletion != null)
             {
@@ -1889,6 +2609,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleDeletion>(null, RepositoryRuleRepositoryRuleDeletion2);
             }
+            else if(RepositoryRuleRepositoryRuleDeletion3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleDeletion>(null, RepositoryRuleRepositoryRuleDeletion3);
+            }
+            else if(RepositoryRuleRepositoryRuleDeletion4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleDeletion>(null, RepositoryRuleRepositoryRuleDeletion4);
+            }
             else if(RepositoryRuleRepositoryRuleMember1 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember1>(null, RepositoryRuleRepositoryRuleMember1);
@@ -1904,6 +2632,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMember12 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember1>(null, RepositoryRuleRepositoryRuleMember12);
+            }
+            else if(RepositoryRuleRepositoryRuleMember13 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember1>(null, RepositoryRuleRepositoryRuleMember13);
+            }
+            else if(RepositoryRuleRepositoryRuleMember14 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember1>(null, RepositoryRuleRepositoryRuleMember14);
             }
             else if(RepositoryRuleRepositoryRuleMember2 != null)
             {
@@ -1921,6 +2657,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember2>(null, RepositoryRuleRepositoryRuleMember22);
             }
+            else if(RepositoryRuleRepositoryRuleMember23 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember2>(null, RepositoryRuleRepositoryRuleMember23);
+            }
+            else if(RepositoryRuleRepositoryRuleMember24 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember2>(null, RepositoryRuleRepositoryRuleMember24);
+            }
             else if(RepositoryRuleRepositoryRuleMember3 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember3>(null, RepositoryRuleRepositoryRuleMember3);
@@ -1936,6 +2680,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMember32 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember3>(null, RepositoryRuleRepositoryRuleMember32);
+            }
+            else if(RepositoryRuleRepositoryRuleMember33 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember3>(null, RepositoryRuleRepositoryRuleMember33);
+            }
+            else if(RepositoryRuleRepositoryRuleMember34 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember3>(null, RepositoryRuleRepositoryRuleMember34);
             }
             else if(RepositoryRuleRepositoryRuleMember4 != null)
             {
@@ -1953,6 +2705,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember4>(null, RepositoryRuleRepositoryRuleMember42);
             }
+            else if(RepositoryRuleRepositoryRuleMember43 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember4>(null, RepositoryRuleRepositoryRuleMember43);
+            }
+            else if(RepositoryRuleRepositoryRuleMember44 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMember4>(null, RepositoryRuleRepositoryRuleMember44);
+            }
             else if(RepositoryRuleRepositoryRuleMergeQueue != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMergeQueue>(null, RepositoryRuleRepositoryRuleMergeQueue);
@@ -1968,6 +2728,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleMergeQueue2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMergeQueue>(null, RepositoryRuleRepositoryRuleMergeQueue2);
+            }
+            else if(RepositoryRuleRepositoryRuleMergeQueue3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMergeQueue>(null, RepositoryRuleRepositoryRuleMergeQueue3);
+            }
+            else if(RepositoryRuleRepositoryRuleMergeQueue4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleMergeQueue>(null, RepositoryRuleRepositoryRuleMergeQueue4);
             }
             else if(RepositoryRuleRepositoryRuleNonFastForward != null)
             {
@@ -1985,6 +2753,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleNonFastForward>(null, RepositoryRuleRepositoryRuleNonFastForward2);
             }
+            else if(RepositoryRuleRepositoryRuleNonFastForward3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleNonFastForward>(null, RepositoryRuleRepositoryRuleNonFastForward3);
+            }
+            else if(RepositoryRuleRepositoryRuleNonFastForward4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleNonFastForward>(null, RepositoryRuleRepositoryRuleNonFastForward4);
+            }
             else if(RepositoryRuleRepositoryRulePullRequest != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRulePullRequest>(null, RepositoryRuleRepositoryRulePullRequest);
@@ -2000,6 +2776,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRulePullRequest2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRulePullRequest>(null, RepositoryRuleRepositoryRulePullRequest2);
+            }
+            else if(RepositoryRuleRepositoryRulePullRequest3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRulePullRequest>(null, RepositoryRuleRepositoryRulePullRequest3);
+            }
+            else if(RepositoryRuleRepositoryRulePullRequest4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRulePullRequest>(null, RepositoryRuleRepositoryRulePullRequest4);
             }
             else if(RepositoryRuleRepositoryRuleRequiredDeployments != null)
             {
@@ -2017,6 +2801,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredDeployments>(null, RepositoryRuleRepositoryRuleRequiredDeployments2);
             }
+            else if(RepositoryRuleRepositoryRuleRequiredDeployments3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredDeployments>(null, RepositoryRuleRepositoryRuleRequiredDeployments3);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredDeployments4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredDeployments>(null, RepositoryRuleRepositoryRuleRequiredDeployments4);
+            }
             else if(RepositoryRuleRepositoryRuleRequiredLinearHistory != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredLinearHistory>(null, RepositoryRuleRepositoryRuleRequiredLinearHistory);
@@ -2032,6 +2824,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleRequiredLinearHistory2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredLinearHistory>(null, RepositoryRuleRepositoryRuleRequiredLinearHistory2);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredLinearHistory3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredLinearHistory>(null, RepositoryRuleRepositoryRuleRequiredLinearHistory3);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredLinearHistory4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredLinearHistory>(null, RepositoryRuleRepositoryRuleRequiredLinearHistory4);
             }
             else if(RepositoryRuleRepositoryRuleRequiredSignatures != null)
             {
@@ -2049,6 +2849,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredSignatures>(null, RepositoryRuleRepositoryRuleRequiredSignatures2);
             }
+            else if(RepositoryRuleRepositoryRuleRequiredSignatures3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredSignatures>(null, RepositoryRuleRepositoryRuleRequiredSignatures3);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredSignatures4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredSignatures>(null, RepositoryRuleRepositoryRuleRequiredSignatures4);
+            }
             else if(RepositoryRuleRepositoryRuleRequiredStatusChecks != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredStatusChecks>(null, RepositoryRuleRepositoryRuleRequiredStatusChecks);
@@ -2064,6 +2872,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleRequiredStatusChecks2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredStatusChecks>(null, RepositoryRuleRepositoryRuleRequiredStatusChecks2);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredStatusChecks3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredStatusChecks>(null, RepositoryRuleRepositoryRuleRequiredStatusChecks3);
+            }
+            else if(RepositoryRuleRepositoryRuleRequiredStatusChecks4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleRequiredStatusChecks>(null, RepositoryRuleRepositoryRuleRequiredStatusChecks4);
             }
             else if(RepositoryRuleRepositoryRuleTagNamePattern != null)
             {
@@ -2081,6 +2897,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleTagNamePattern>(null, RepositoryRuleRepositoryRuleTagNamePattern2);
             }
+            else if(RepositoryRuleRepositoryRuleTagNamePattern3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleTagNamePattern>(null, RepositoryRuleRepositoryRuleTagNamePattern3);
+            }
+            else if(RepositoryRuleRepositoryRuleTagNamePattern4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleTagNamePattern>(null, RepositoryRuleRepositoryRuleTagNamePattern4);
+            }
             else if(RepositoryRuleRepositoryRuleUpdate != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleUpdate>(null, RepositoryRuleRepositoryRuleUpdate);
@@ -2097,6 +2921,14 @@ namespace GitHub.Models
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleUpdate>(null, RepositoryRuleRepositoryRuleUpdate2);
             }
+            else if(RepositoryRuleRepositoryRuleUpdate3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleUpdate>(null, RepositoryRuleRepositoryRuleUpdate3);
+            }
+            else if(RepositoryRuleRepositoryRuleUpdate4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleUpdate>(null, RepositoryRuleRepositoryRuleUpdate4);
+            }
             else if(RepositoryRuleRepositoryRuleWorkflows != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleWorkflows>(null, RepositoryRuleRepositoryRuleWorkflows);
@@ -2112,6 +2944,14 @@ namespace GitHub.Models
             else if(RepositoryRuleRepositoryRuleWorkflows2 != null)
             {
                 writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleWorkflows>(null, RepositoryRuleRepositoryRuleWorkflows2);
+            }
+            else if(RepositoryRuleRepositoryRuleWorkflows3 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleWorkflows>(null, RepositoryRuleRepositoryRuleWorkflows3);
+            }
+            else if(RepositoryRuleRepositoryRuleWorkflows4 != null)
+            {
+                writer.WriteObjectValue<global::GitHub.Models.RepositoryRuleWorkflows>(null, RepositoryRuleRepositoryRuleWorkflows4);
             }
             else if(RepositoryRuleRequiredDeployments != null)
             {

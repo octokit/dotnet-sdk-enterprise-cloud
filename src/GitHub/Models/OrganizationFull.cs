@@ -8,7 +8,7 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>
-    /// Prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
+    /// Prevents users in the organization from using insecure methods of two-factor authentication to fulfill a two-factor requirement.Removes non-compliant outside collaborators from the organization and its repositories.GitHub currently defines SMS as an insecure method of two-factor authentication.If your users are managed by the enterprise this policy will not affect them. The first admin account of the enterprise will still be affected.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
     public partial class OrganizationFull : IAdditionalDataHolder, IParsable
@@ -73,6 +73,8 @@ namespace GitHub.Models
         /// <summary>**Endpoint closing down notice.** Please use [code security configurations](https://docs.github.com/enterprise-cloud@latest//rest/code-security/configurations) instead.Whether dependency graph is automatically enabled for new repositories and repositories transferred to this organization.This field is only visible to organization owners or members of a team with the security manager role.</summary>
         [Obsolete("")]
         public bool? DependencyGraphEnabledForNewRepositories { get; set; }
+        /// <summary>Controls whether or not deploy keys may be added and used for repositories in the organization.</summary>
+        public bool? DeployKeysEnabledForRepositories { get; set; }
         /// <summary>The description property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -319,6 +321,7 @@ namespace GitHub.Models
                 { "dependabot_alerts_enabled_for_new_repositories", n => { DependabotAlertsEnabledForNewRepositories = n.GetBoolValue(); } },
                 { "dependabot_security_updates_enabled_for_new_repositories", n => { DependabotSecurityUpdatesEnabledForNewRepositories = n.GetBoolValue(); } },
                 { "dependency_graph_enabled_for_new_repositories", n => { DependencyGraphEnabledForNewRepositories = n.GetBoolValue(); } },
+                { "deploy_keys_enabled_for_repositories", n => { DeployKeysEnabledForRepositories = n.GetBoolValue(); } },
                 { "description", n => { Description = n.GetStringValue(); } },
                 { "disk_usage", n => { DiskUsage = n.GetIntValue(); } },
                 { "email", n => { Email = n.GetStringValue(); } },
@@ -386,6 +389,7 @@ namespace GitHub.Models
             writer.WriteBoolValue("dependabot_alerts_enabled_for_new_repositories", DependabotAlertsEnabledForNewRepositories);
             writer.WriteBoolValue("dependabot_security_updates_enabled_for_new_repositories", DependabotSecurityUpdatesEnabledForNewRepositories);
             writer.WriteBoolValue("dependency_graph_enabled_for_new_repositories", DependencyGraphEnabledForNewRepositories);
+            writer.WriteBoolValue("deploy_keys_enabled_for_repositories", DeployKeysEnabledForRepositories);
             writer.WriteStringValue("description", Description);
             writer.WriteIntValue("disk_usage", DiskUsage);
             writer.WriteStringValue("email", Email);

@@ -35,7 +35,7 @@ namespace GitHub.Models
         public DateTimeOffset? CreatedAt { get; set; }
         /// <summary>The bypass type of the user making the API request for this ruleset. This field is only returned whenquerying the repository-level endpoint.</summary>
         public global::GitHub.Models.RepositoryRuleset_current_user_can_bypass? CurrentUserCanBypass { get; set; }
-        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page.</summary>
+        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page. `evaluate` is not available for the `repository` target.</summary>
         public global::GitHub.Models.RepositoryRuleEnforcement? Enforcement { get; set; }
         /// <summary>The ID of the ruleset</summary>
         public int? Id { get; set; }

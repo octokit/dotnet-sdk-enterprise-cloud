@@ -34,7 +34,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
         {
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public preview and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user&apos;s data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user&apos;s emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
+        /// Suspends a SCIM user permanently from an enterprise. This action will: remove all the user&apos;s data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user&apos;s emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#delete-a-scim-user-from-an-enterprise" />
         /// </summary>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
@@ -63,7 +63,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             await RequestAdapter.SendNoContentAsync(requestInfo, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM user.
+        /// Gets information about a SCIM user.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#get-scim-provisioning-information-for-an-enterprise-user" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseUserResponse"/></returns>
@@ -93,7 +93,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseUserResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseUserResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned user&apos;s individual attributes.To modify a user&apos;s attributes, you&apos;ll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will be ineffective.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
+        /// Update a provisioned user&apos;s individual attributes.To modify a user&apos;s attributes, you&apos;ll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will be ineffective.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#update-an-attribute-for-a-scim-enterprise-user" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseUserResponse"/></returns>
@@ -125,7 +125,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseUserResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseUserResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned user&apos;s information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
+        /// Replaces an existing provisioned user&apos;s information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/scim#set-scim-information-for-a-provisioned-enterprise-user" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.ScimEnterpriseUserResponse"/></returns>
@@ -157,7 +157,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return await RequestAdapter.SendAsync<global::GitHub.Models.ScimEnterpriseUserResponse>(requestInfo, global::GitHub.Models.ScimEnterpriseUserResponse.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning using the REST API is in public preview and subject to change.Suspends a SCIM user permanently from an enterprise. This action will: remove all the user&apos;s data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user&apos;s emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
+        /// Suspends a SCIM user permanently from an enterprise. This action will: remove all the user&apos;s data,  anonymize their login, email, and display name, erase all external identity SCIM attributes, delete the user&apos;s emails, avatar, PATs, SSH keys, OAuth authorizations, GPG keys, and SAML mappings. This action is irreversible.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -176,7 +176,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Gets information about a SCIM user.
+        /// Gets information about a SCIM user.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -195,7 +195,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Update a provisioned user&apos;s individual attributes.To modify a user&apos;s attributes, you&apos;ll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will be ineffective.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
+        /// Update a provisioned user&apos;s individual attributes.To modify a user&apos;s attributes, you&apos;ll need to provide a `Operations` JSON formatted request that includes at least one of the following actions: add, remove, or replace. For specific examples and more information on the SCIM operations format, please refer to the [SCIM specification](https://tools.ietf.org/html/rfc7644#section-3.5.2).&gt; [!NOTE]&gt; Complex SCIM `path` selectors that include filters are not supported. For example, a `path` selector defined as `&quot;path&quot;: &quot;emails[type eq \&quot;work\&quot;]&quot;` will be ineffective.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.&gt; ```&gt; {&gt;   &quot;Operations&quot;:[{&gt;     &quot;op&quot;:&quot;replace&quot;,&gt;     &quot;value&quot;:{&gt;       &quot;active&quot;:false&gt;     }&gt;   }]&gt; }&gt; ```
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>
@@ -217,7 +217,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users.Item
             return requestInfo;
         }
         /// <summary>
-        /// &gt; [!NOTE]&gt; SCIM provisioning for users and groups using the REST API is in public preview and subject to change.Replaces an existing provisioned user&apos;s information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
+        /// Replaces an existing provisioned user&apos;s information.You must supply complete user information, just as you would when provisioning them initially. Any previously existing data not provided will be deleted. To update only a specific attribute, refer to the [Update an attribute for a SCIM user](#update-an-attribute-for-a-scim-enterprise-user) endpoint.&gt; [!WARNING]&gt; Setting `active: false` will suspend a user, and their handle and email will be obfuscated.
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="body">The request body</param>

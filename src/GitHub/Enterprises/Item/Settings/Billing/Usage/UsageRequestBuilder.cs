@@ -34,7 +34,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
         {
         }
         /// <summary>
-        /// Gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
+        /// Gets a report of usage by cost center for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise. By default this endpoint will return usage that does not have a cost center.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
         /// API method documentation <see href="https://docs.github.com/enterprise-cloud@latest//rest/enterprise-admin/billing#get-billing-usage-report-for-an-enterprise" />
         /// </summary>
         /// <returns>A <see cref="global::GitHub.Models.BillingUsageReport"/></returns>
@@ -64,7 +64,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
             return await RequestAdapter.SendAsync<global::GitHub.Models.BillingUsageReport>(requestInfo, global::GitHub.Models.BillingUsageReport.CreateFromDiscriminatorValue, errorMapping, cancellationToken).ConfigureAwait(false);
         }
         /// <summary>
-        /// Gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
+        /// Gets a report of usage by cost center for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise. By default this endpoint will return usage that does not have a cost center.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -92,12 +92,12 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
             return new global::GitHub.Enterprises.Item.Settings.Billing.Usage.UsageRequestBuilder(rawUrl, RequestAdapter);
         }
         /// <summary>
-        /// Gets a report of the total usage for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
+        /// Gets a report of usage by cost center for an enterprise. To use this endpoint, you must be an administrator or billing manager of the enterprise. By default this endpoint will return usage that does not have a cost center.**Note:** This endpoint is only available to enterprises with access to the enhanced billing platform. For more information, see &quot;[About the enhanced billing platform for enterprises](https://docs.github.com/enterprise-cloud@latest//billing/using-the-enhanced-billing-platform-for-enterprises/about-the-enhanced-billing-platform-for-enterprises#how-do-i-know-if-i-can-access-the-enhanced-billing-platform).&quot;
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class UsageRequestBuilderGetQueryParameters 
         {
-            /// <summary>The ID corresponding to a cost center.</summary>
+            /// <summary>The ID corresponding to a cost center. The default value is no cost center.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
             [QueryParameter("cost_center_id")]
@@ -116,7 +116,7 @@ namespace GitHub.Enterprises.Item.Settings.Billing.Usage
             /// <summary>If specified, only return results for a single month. The value of `month` is an integer between `1` and `12`.</summary>
             [QueryParameter("month")]
             public int? Month { get; set; }
-            /// <summary>If specified, only return results for a single year. The value of `year` is an integer with four digits representing a year. For example, `2023`.</summary>
+            /// <summary>If specified, only return results for a single year. The value of `year` is an integer with four digits representing a year. For example, `2024`. Default value is the current year.</summary>
             [QueryParameter("year")]
             public int? Year { get; set; }
         }

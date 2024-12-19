@@ -23,7 +23,7 @@ namespace GitHub.Orgs.Item.Rulesets
 #else
         public List<global::GitHub.Models.RepositoryRulesetBypassActor> BypassActors { get; set; }
 #endif
-        /// <summary>Conditions for an organization ruleset.The branch and tag rulesets conditions object should contain both `repository_name` and `ref_name` properties, or both `repository_id` and `ref_name` properties, or both `repository_property` and `ref_name` properties.The push rulesets conditions object does not require the `ref_name` property.</summary>
+        /// <summary>Conditions for an organization ruleset.The branch and tag rulesets conditions object should contain both `repository_name` and `ref_name` properties, or both `repository_id` and `ref_name` properties, or both `repository_property` and `ref_name` properties.The push rulesets conditions object does not require the `ref_name` property.For repository policy rulesets, the conditions object should only contain the `repository_name`, the `repository_id`, or the `repository_property`.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
         public global::GitHub.Models.OrgRulesetConditions? Conditions { get; set; }
@@ -31,7 +31,7 @@ namespace GitHub.Orgs.Item.Rulesets
 #else
         public global::GitHub.Models.OrgRulesetConditions Conditions { get; set; }
 #endif
-        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page.</summary>
+        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page. `evaluate` is not available for the `repository` target.</summary>
         public global::GitHub.Models.RepositoryRuleEnforcement? Enforcement { get; set; }
         /// <summary>The name of the ruleset.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

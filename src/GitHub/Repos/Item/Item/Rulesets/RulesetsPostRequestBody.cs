@@ -31,7 +31,7 @@ namespace GitHub.Repos.Item.Item.Rulesets
 #else
         public global::GitHub.Models.RepositoryRulesetConditions Conditions { get; set; }
 #endif
-        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page.</summary>
+        /// <summary>The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page. `evaluate` is not available for the `repository` target.</summary>
         public global::GitHub.Models.RepositoryRuleEnforcement? Enforcement { get; set; }
         /// <summary>The name of the ruleset.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
