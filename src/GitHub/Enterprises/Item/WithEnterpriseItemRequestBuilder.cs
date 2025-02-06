@@ -3,6 +3,7 @@
 using GitHub.Enterprises.Item.Actions;
 using GitHub.Enterprises.Item.Announcement;
 using GitHub.Enterprises.Item.AuditLog;
+using GitHub.Enterprises.Item.BypassRequests;
 using GitHub.Enterprises.Item.CodeScanning;
 using GitHub.Enterprises.Item.CodeSecurity;
 using GitHub.Enterprises.Item.Code_security_and_analysis;
@@ -46,6 +47,11 @@ namespace GitHub.Enterprises.Item
         public global::GitHub.Enterprises.Item.AuditLog.AuditLogRequestBuilder AuditLog
         {
             get => new global::GitHub.Enterprises.Item.AuditLog.AuditLogRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The bypassRequests property</summary>
+        public global::GitHub.Enterprises.Item.BypassRequests.BypassRequestsRequestBuilder BypassRequests
+        {
+            get => new global::GitHub.Enterprises.Item.BypassRequests.BypassRequestsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The code_security_and_analysis property</summary>
         public global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisRequestBuilder Code_security_and_analysis
