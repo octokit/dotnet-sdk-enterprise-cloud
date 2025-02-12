@@ -8,41 +8,39 @@ using System;
 namespace GitHub.Models
 {
     /// <summary>
-    /// Enterprise global announcement
+    /// The actor who updated the ruleset
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
-    public partial class Announcement : IAdditionalDataHolder, IParsable
+    public partial class RulesetVersion_actor : IAdditionalDataHolder, IParsable
     {
         /// <summary>Stores additional data not described in the OpenAPI description found when deserializing. Can be used for serialization as well.</summary>
         public IDictionary<string, object> AdditionalData { get; set; }
-        /// <summary>The announcement text in GitHub Flavored Markdown. For more information about GitHub Flavored Markdown, see &quot;[Basic writing and formatting syntax](https://docs.github.com/enterprise-cloud@latest//github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).&quot;</summary>
+        /// <summary>The id property</summary>
+        public int? Id { get; set; }
+        /// <summary>The type property</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public string? AnnouncementProp { get; set; }
+        public string? Type { get; set; }
 #nullable restore
 #else
-        public string AnnouncementProp { get; set; }
+        public string Type { get; set; }
 #endif
-        /// <summary>The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.</summary>
-        public DateTimeOffset? ExpiresAt { get; set; }
-        /// <summary>Whether an announcement can be dismissed by the user.</summary>
-        public bool? UserDismissible { get; set; }
         /// <summary>
-        /// Instantiates a new <see cref="global::GitHub.Models.Announcement"/> and sets the default values.
+        /// Instantiates a new <see cref="global::GitHub.Models.RulesetVersion_actor"/> and sets the default values.
         /// </summary>
-        public Announcement()
+        public RulesetVersion_actor()
         {
             AdditionalData = new Dictionary<string, object>();
         }
         /// <summary>
         /// Creates a new instance of the appropriate class based on discriminator value
         /// </summary>
-        /// <returns>A <see cref="global::GitHub.Models.Announcement"/></returns>
+        /// <returns>A <see cref="global::GitHub.Models.RulesetVersion_actor"/></returns>
         /// <param name="parseNode">The parse node to use to read the discriminator value and create the object</param>
-        public static global::GitHub.Models.Announcement CreateFromDiscriminatorValue(IParseNode parseNode)
+        public static global::GitHub.Models.RulesetVersion_actor CreateFromDiscriminatorValue(IParseNode parseNode)
         {
             _ = parseNode ?? throw new ArgumentNullException(nameof(parseNode));
-            return new global::GitHub.Models.Announcement();
+            return new global::GitHub.Models.RulesetVersion_actor();
         }
         /// <summary>
         /// The deserialization information for the current model
@@ -52,9 +50,8 @@ namespace GitHub.Models
         {
             return new Dictionary<string, Action<IParseNode>>
             {
-                { "announcement", n => { AnnouncementProp = n.GetStringValue(); } },
-                { "expires_at", n => { ExpiresAt = n.GetDateTimeOffsetValue(); } },
-                { "user_dismissible", n => { UserDismissible = n.GetBoolValue(); } },
+                { "id", n => { Id = n.GetIntValue(); } },
+                { "type", n => { Type = n.GetStringValue(); } },
             };
         }
         /// <summary>
@@ -64,9 +61,8 @@ namespace GitHub.Models
         public virtual void Serialize(ISerializationWriter writer)
         {
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
-            writer.WriteStringValue("announcement", AnnouncementProp);
-            writer.WriteDateTimeOffsetValue("expires_at", ExpiresAt);
-            writer.WriteBoolValue("user_dismissible", UserDismissible);
+            writer.WriteIntValue("id", Id);
+            writer.WriteStringValue("type", Type);
             writer.WriteAdditionalData(AdditionalData);
         }
     }
