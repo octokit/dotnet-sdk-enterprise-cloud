@@ -173,7 +173,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Groups
             [QueryParameter("excludedAttributes")]
             public string ExcludedAttributes { get; set; }
 #endif
-            /// <summary>If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `externalId`, `id`, and `displayName`. For example, `?filter=&apos;externalId eq &quot;9138790-10932-109120392-12321&quot;&apos;`.</summary>
+            /// <summary>If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `externalId`, `id`, and `displayName`. For example, `?filter=externalId eq &quot;9138790-10932-109120392-12321&quot;`.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
             [QueryParameter("filter")]
