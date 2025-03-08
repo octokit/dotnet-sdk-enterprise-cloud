@@ -3,6 +3,7 @@
 using GitHub.Enterprises.Item.Actions;
 using GitHub.Enterprises.Item.Announcement;
 using GitHub.Enterprises.Item.AuditLog;
+using GitHub.Enterprises.Item.BypassRequests;
 using GitHub.Enterprises.Item.CodeScanning;
 using GitHub.Enterprises.Item.CodeSecurity;
 using GitHub.Enterprises.Item.Code_security_and_analysis;
@@ -11,6 +12,8 @@ using GitHub.Enterprises.Item.Copilot;
 using GitHub.Enterprises.Item.Dependabot;
 using GitHub.Enterprises.Item.Item;
 using GitHub.Enterprises.Item.LicenseSyncStatus;
+using GitHub.Enterprises.Item.NetworkConfigurations;
+using GitHub.Enterprises.Item.NetworkSettings;
 using GitHub.Enterprises.Item.Properties;
 using GitHub.Enterprises.Item.Rulesets;
 using GitHub.Enterprises.Item.SecretScanning;
@@ -44,6 +47,11 @@ namespace GitHub.Enterprises.Item
         public global::GitHub.Enterprises.Item.AuditLog.AuditLogRequestBuilder AuditLog
         {
             get => new global::GitHub.Enterprises.Item.AuditLog.AuditLogRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The bypassRequests property</summary>
+        public global::GitHub.Enterprises.Item.BypassRequests.BypassRequestsRequestBuilder BypassRequests
+        {
+            get => new global::GitHub.Enterprises.Item.BypassRequests.BypassRequestsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The code_security_and_analysis property</summary>
         public global::GitHub.Enterprises.Item.Code_security_and_analysis.Code_security_and_analysisRequestBuilder Code_security_and_analysis
@@ -79,6 +87,16 @@ namespace GitHub.Enterprises.Item
         public global::GitHub.Enterprises.Item.LicenseSyncStatus.LicenseSyncStatusRequestBuilder LicenseSyncStatus
         {
             get => new global::GitHub.Enterprises.Item.LicenseSyncStatus.LicenseSyncStatusRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The networkConfigurations property</summary>
+        public global::GitHub.Enterprises.Item.NetworkConfigurations.NetworkConfigurationsRequestBuilder NetworkConfigurations
+        {
+            get => new global::GitHub.Enterprises.Item.NetworkConfigurations.NetworkConfigurationsRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The networkSettings property</summary>
+        public global::GitHub.Enterprises.Item.NetworkSettings.NetworkSettingsRequestBuilder NetworkSettings
+        {
+            get => new global::GitHub.Enterprises.Item.NetworkSettings.NetworkSettingsRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The properties property</summary>
         public global::GitHub.Enterprises.Item.Properties.PropertiesRequestBuilder Properties

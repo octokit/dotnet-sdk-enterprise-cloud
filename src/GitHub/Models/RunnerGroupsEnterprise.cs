@@ -36,6 +36,14 @@ namespace GitHub.Models
 #else
         public string Name { get; set; }
 #endif
+        /// <summary>The identifier of a hosted compute network configuration.</summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+        public string? NetworkConfigurationId { get; set; }
+#nullable restore
+#else
+        public string NetworkConfigurationId { get; set; }
+#endif
         /// <summary>If `true`, the runner group will be restricted to running only the workflows specified in the `selected_workflows` array.</summary>
         public bool? RestrictedToWorkflows { get; set; }
         /// <summary>The runners_url property</summary>
@@ -102,6 +110,7 @@ namespace GitHub.Models
                 { "hosted_runners_url", n => { HostedRunnersUrl = n.GetStringValue(); } },
                 { "id", n => { Id = n.GetDoubleValue(); } },
                 { "name", n => { Name = n.GetStringValue(); } },
+                { "network_configuration_id", n => { NetworkConfigurationId = n.GetStringValue(); } },
                 { "restricted_to_workflows", n => { RestrictedToWorkflows = n.GetBoolValue(); } },
                 { "runners_url", n => { RunnersUrl = n.GetStringValue(); } },
                 { "selected_organizations_url", n => { SelectedOrganizationsUrl = n.GetStringValue(); } },
@@ -122,6 +131,7 @@ namespace GitHub.Models
             writer.WriteStringValue("hosted_runners_url", HostedRunnersUrl);
             writer.WriteDoubleValue("id", Id);
             writer.WriteStringValue("name", Name);
+            writer.WriteStringValue("network_configuration_id", NetworkConfigurationId);
             writer.WriteBoolValue("restricted_to_workflows", RestrictedToWorkflows);
             writer.WriteStringValue("runners_url", RunnersUrl);
             writer.WriteStringValue("selected_organizations_url", SelectedOrganizationsUrl);

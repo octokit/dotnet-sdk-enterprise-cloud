@@ -25,6 +25,8 @@ namespace GitHub.Models
 #endif
         /// <summary>The time at which the announcement expires. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. To set an announcement that never expires, omit this parameter, set it to `null`, or set it to an empty string.</summary>
         public DateTimeOffset? ExpiresAt { get; set; }
+        /// <summary>Whether an announcement can be dismissed by the user.</summary>
+        public bool? UserDismissible { get; set; }
         /// <summary>
         /// Instantiates a new <see cref="global::GitHub.Models.Announcement"/> and sets the default values.
         /// </summary>
@@ -52,6 +54,7 @@ namespace GitHub.Models
             {
                 { "announcement", n => { AnnouncementProp = n.GetStringValue(); } },
                 { "expires_at", n => { ExpiresAt = n.GetDateTimeOffsetValue(); } },
+                { "user_dismissible", n => { UserDismissible = n.GetBoolValue(); } },
             };
         }
         /// <summary>
@@ -63,6 +66,7 @@ namespace GitHub.Models
             _ = writer ?? throw new ArgumentNullException(nameof(writer));
             writer.WriteStringValue("announcement", AnnouncementProp);
             writer.WriteDateTimeOffsetValue("expires_at", ExpiresAt);
+            writer.WriteBoolValue("user_dismissible", UserDismissible);
             writer.WriteAdditionalData(AdditionalData);
         }
     }

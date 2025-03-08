@@ -163,7 +163,7 @@ namespace GitHub.Scim.V2.Enterprises.Item.Users
             /// <summary>Used for pagination: the number of results to return per page.</summary>
             [QueryParameter("count")]
             public int? Count { get; set; }
-            /// <summary>If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `userName`, `externalId`, `id`, and `displayName`. For example, `?filter=&quot;externalId eq &apos;9138790-10932-109120392-12321&apos;&quot;`.</summary>
+            /// <summary>If specified, only results that match the specified filter will be returned. Multiple filters are not supported. Possible filters are `userName`, `externalId`, `id`, and `displayName`. For example, `?filter=externalId eq &quot;9138790-10932-109120392-12321&quot;`.</summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
             [QueryParameter("filter")]

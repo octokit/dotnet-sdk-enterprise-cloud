@@ -70,7 +70,7 @@ namespace GitHub.Enterprises.Item.AuditLog.Streams.Item
             writer.WriteAdditionalData(AdditionalData);
         }
         /// <summary>
-        /// Composed type wrapper for classes <see cref="global::GitHub.Models.AmazonS3AccessKeysConfig"/>, <see cref="global::GitHub.Models.AmazonS3OidcConfig"/>, <see cref="global::GitHub.Models.AzureBlobConfig"/>, <see cref="global::GitHub.Models.AzureHubConfig"/>, <see cref="global::GitHub.Models.DatadogConfig"/>, <see cref="global::GitHub.Models.GoogleCloudConfig"/>, <see cref="global::GitHub.Models.SplunkConfig"/>
+        /// Composed type wrapper for classes <see cref="global::GitHub.Models.AmazonS3AccessKeysConfig"/>, <see cref="global::GitHub.Models.AmazonS3OidcConfig"/>, <see cref="global::GitHub.Models.AzureBlobConfig"/>, <see cref="global::GitHub.Models.AzureHubConfig"/>, <see cref="global::GitHub.Models.DatadogConfig"/>, <see cref="global::GitHub.Models.GoogleCloudConfig"/>, <see cref="global::GitHub.Models.HecConfig"/>, <see cref="global::GitHub.Models.SplunkConfig"/>
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.19.0")]
         public partial class WithStream_PutRequestBody_vendor_specific : IComposedTypeWrapper, IParsable
@@ -123,6 +123,14 @@ namespace GitHub.Enterprises.Item.AuditLog.Streams.Item
 #else
             public global::GitHub.Models.GoogleCloudConfig GoogleCloudConfig { get; set; }
 #endif
+            /// <summary>Composed type representation for type <see cref="global::GitHub.Models.HecConfig"/></summary>
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
+#nullable enable
+            public global::GitHub.Models.HecConfig? HecConfig { get; set; }
+#nullable restore
+#else
+            public global::GitHub.Models.HecConfig HecConfig { get; set; }
+#endif
             /// <summary>Composed type representation for type <see cref="global::GitHub.Models.SplunkConfig"/></summary>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
@@ -165,6 +173,10 @@ namespace GitHub.Enterprises.Item.AuditLog.Streams.Item
                 {
                     result.GoogleCloudConfig = new global::GitHub.Models.GoogleCloudConfig();
                 }
+                else if("hec-config".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
+                {
+                    result.HecConfig = new global::GitHub.Models.HecConfig();
+                }
                 else if("splunk-config".Equals(mappingValue, StringComparison.OrdinalIgnoreCase))
                 {
                     result.SplunkConfig = new global::GitHub.Models.SplunkConfig();
@@ -200,6 +212,10 @@ namespace GitHub.Enterprises.Item.AuditLog.Streams.Item
                 else if(GoogleCloudConfig != null)
                 {
                     return GoogleCloudConfig.GetFieldDeserializers();
+                }
+                else if(HecConfig != null)
+                {
+                    return HecConfig.GetFieldDeserializers();
                 }
                 else if(SplunkConfig != null)
                 {
@@ -237,6 +253,10 @@ namespace GitHub.Enterprises.Item.AuditLog.Streams.Item
                 else if(GoogleCloudConfig != null)
                 {
                     writer.WriteObjectValue<global::GitHub.Models.GoogleCloudConfig>(null, GoogleCloudConfig);
+                }
+                else if(HecConfig != null)
+                {
+                    writer.WriteObjectValue<global::GitHub.Models.HecConfig>(null, HecConfig);
                 }
                 else if(SplunkConfig != null)
                 {
